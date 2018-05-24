@@ -12,9 +12,7 @@ For research purposes and further usage in the codification process a word2vec m
 [('Υπουργό', 0.6968967914581299), ('Υπουργού', 0.6823141574859619), ('Εσωτερικών', 0.6715962886810303), ('Αλληλεγγύης', 0.6563194990158081), ('Γραμματέας', 0.6339884996414185), ('Οικονομίας', 0.6258766651153564), ('Γενικό', 0.6158846616744995), ('Μεταφορών', 0.6002545952796936), ('Φορέας', 0.5990256071090698)]
 ```
 
-which is pretty satisfying. The word vectors are also reduced in dimension using t-Stochastic Neigbor Embedding into 2D resulting in this plot (for 100 words):
-
-![w2v](/docs/word2vec.png)
+which is pretty satisfying. The word vectors are also reduced in dimension using t-Stochastic Neighbour Embedding.
 
 ### Storing data
 
