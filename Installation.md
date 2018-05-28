@@ -12,6 +12,14 @@ sudo apt-get install -y mongodb-org
 
 
 
+Start MongoDB Database Server with
+
+```bash
+sudo service mongodb start
+```
+
+
+
 ## Installing `3gm` via `setup.py` script
 
 1. Clone the project to your workspace via
