@@ -14,6 +14,8 @@ For research purposes and further usage in the codification process a word2vec m
 
 which is pretty satisfying. The word vectors are also reduced in dimension using t-Stochastic Neighbour Embedding.
 
+![word2vec](/home/marios/workspace/gsoc2018-3gm.wiki/word2vec.png)
+
 ### Storing data
 
 This project has to do with a lot of documents so selecting a NoSQL database like MongoDB would be a perfect fit for the project. The articles are organized in collections by paragraphs. It uses the `pymongo` module to communicate with the MongoDB database server. The scripts used for communication with the database as well as query building from syntactic analysis is found in the `src/database.py` module.
