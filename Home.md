@@ -21,11 +21,3 @@ The project is divided into main stages / milestones described below as well as 
 Through the case of analyzing, categorizing and codifying Government Gazette articles this proposal sets out to illustrate key points such as elimination of bureaucracy and efficient management of public documents for the implementation of tangible solutions enabling huge savings of time for jurists. The synergy of machine learning algorithms combined with in vitro processing of legal texts signifies the potential for broader usage of machine learning in the public sector; an area with ample amounts of unorganized data.
 
 **Keywords:** _text mining, government gazette, machine learning, law codification_
-
-**References**
-
-[1] Kostakis, Vasilis, and Marios Papachristou. "Commons-based peer production and digital fabrication: The case of a RepRap-based, Lego-built 3D printing-milling machine." Telematics and Informatics 31.3 (2014): 434-443.
-[2] GFOSS GSoC 2018 Ideas
-[3] Greek Committee for Codification: http://www.ggk.gov.gr/?page_id=16 
-[4] ISOKRATIS Legal Database: http://www.dsanet.gr 
-[5] SciPy | TextBlob | https://www.nltk.org/ | https://keras.io/ 
