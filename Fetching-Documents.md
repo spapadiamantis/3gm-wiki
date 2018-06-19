@@ -43,7 +43,9 @@ The crontab parses the following pattern:
 ```
 MIN HOUR DOM MON DOW CMD
 ```
+The values allowed are the following: 
 
+```
 Format Meanings and Allowed Value:
 MIN     Minute field    0 to 59
 HOUR    Hour field      0 to 23
@@ -51,6 +53,7 @@ DOM     Day of Month    1-31
 MON     Month field     1-12
 DOW     Day Of Week     0-6
 CMD     Command     Any command to be executed.
+```
 
 The daemon may need restart. For Debian-based systems:
 ```bash
