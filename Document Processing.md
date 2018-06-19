@@ -47,17 +47,52 @@ source .bashrc
 
 ## Using the `converter.py` tool for batch conversion 
 
-# Document Parser
+The documents can be converted to raw text combining both techniques (direct conversion to text or conversion to text via OCR) using the `converter.py` script under `scripts/converter.py`.  For faster results, the tool uses a `multiprocessing.Pool` to run jobs simultaneously. 
 
-In order to be codified and processed, each document is parsed through the `IssueParser` class located under `parser.py` in the main module. The parser API is described as follows: 
+Usage:
+
+```
+usage: converter.py [-h] [-pdf2txt PDF2TXT] [-input_dir INPUT_DIR]
+                    [-output_dir OUTPUT_DIR] [--njobs NJOBS]
+
+Tool for batch conversion. For more details and documentation visit
+https://github.com/eellak/gsoc2018-3gm/wiki/Document-Processing#using-the-
+converterpy-tool-for-batch-conversion
+
+optional arguments:
+  -h, --help            show this help message and exit
+
+required arguments:
+  -pdf2txt PDF2TXT      pdf2txt.py Executable
+  -input_dir INPUT_DIR  Input Directory
+  -output_dir OUTPUT_DIR
+                        Output Directory
+
+optional arguments:
+  --njobs NJOBS         Number of parallel jobs (default = 1)
+```
+
+Example (with `nohup`):
+
+```bash
+nohup python3 converter.py -input_dir ../data/1998/ -output_dir ../data/1998/ -pdf2txt pdf2txt.py
+```
 
 
 
+# Document Parsing Modules
 
+### Issue Parser
 
+In order to be codified and processed, each document is parsed through the `IssueParser` class located under `parser.py` in the main module. You can read the docs of the `IssueParser` API via:
 
+```bash
+pydoc parser.py
+```
 
-The standalone module can be used via creating `IssueParser` 
+#### Example Usage of Document Parser
+
+The standalone module can be used via creating `IssueParser`  objects 
 
 ```python
 import parser
@@ -67,6 +102,8 @@ issue = parser.IssueParser('issue.txt')
 # e.g. 
 issue.detect_new_laws()
 ```
+
+### Law Parser
 
 
 
