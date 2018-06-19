@@ -29,5 +29,7 @@ If the documents are in PDF format (either contain text or not) you should conve
 python3 scripts/converter.py -input_dir ../data/1998/ -output_dir ../data/1998/ -pdf2txt pdf2txt.py
 ```   
 
+## Step 3: Codification Procedure
+
 
 
