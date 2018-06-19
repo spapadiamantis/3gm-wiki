@@ -11,6 +11,25 @@ After following the Installation Instructions Wiki Page you will be able to use 
 Be sure you have setup the MongoDB server in order to make changes to the database. 
 
 
+## Using as a module
+
+1. Import by 
+
+```python
+import codifier
+```
+
+2. Create a `LawCodifier` object as 
+
+```python
+cod = codifier.LawCodifier('<directory-of-gg-issues>')
+```
+
+3. Codify a statute with `codify_law()` method. For example
+
+```python
+cod.codify_law('ν. 1920/1991')
+```
 
 **DISCLAIMER** This is work in progress so it is expected to be unstable. 
 
