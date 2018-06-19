@@ -19,7 +19,7 @@ data/
   |-   filen.{pdf,txt}
 ```   
 
-3. If the data is already in `.txt` format then you can head over [Step 3](#Step 3: Codification Procedure)
+3. If the data is already in `.txt` format then you can head over [Step 3](#step-3-codification-procedure)
 
 ## Step 2: Converting the documents 
 
