@@ -56,5 +56,24 @@ python3 scripts/converter.py -input_dir ../data/1998/ -output_dir ../data/1998/ 
 >> cod.texify_law('ν. 4448/2018', 'Κωδικοποιημένος_Νόμος.pdf') 
 ```
 
+5. The data is organized in the MongoDB database in versions for easier lookup.
+The contents of each version are organized in periods. 
 
+```
+_id: "ν. 4448/2018"
+versions: Array
+   0: Object
+      articles: Object
+             1: Object
+                0: Array
+                   0: "Τα Μέρη, στο πλαίσιο του παρόντος Μνημονίου Κατανόησης και σύμφωνα με ..."
+             2: Object
+      lemmas: Object
+      titles: Object
+      _version: 0
+      amendee: "20170100001.txt"
+```
+
+## Step 4: Optional Functionality 
+word2vec and topic models TBA.
 
