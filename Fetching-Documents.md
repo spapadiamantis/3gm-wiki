@@ -9,18 +9,31 @@ The script __requires__ the [Chrome Driver](http://chromedriver.chromium.org/dow
 Usage: 
 
 ```
-usage: fetcher.py [-h] [-date_from DATE_FROM] [-date_to DATE_TO]
-                  [-output_dir OUTPUT_DIR] [--chromedriver CHROMEDRIVER]
+$ ./fetcher.py --help
+usage: fetcher.py [-h] -date_from DATE_FROM -date_to DATE_TO -output_dir
+                  OUTPUT_DIR --chromedriver CHROMEDRIVER
+
+This is the fetching tool for downloading Government Gazette Issues from the
+ET. For more information visit
+https://github.com/eellak/gsoc2018-3gm/wiki/Fetching-Documents
 
 optional arguments:
   -h, --help            show this help message and exit
+
+required arguments:
   -date_from DATE_FROM  Date from in DD.MM.YYYY format
   -date_to DATE_TO      Date to in DD.MM.YYYY format
   -output_dir OUTPUT_DIR
                         Output Directory
+
+optional arguments:
   --chromedriver CHROMEDRIVER
                         Chrome driver executable
+```
+You need to provide the tool with the start and end date in DD.MM.YYYY format and the output directory of the documents. For example: 
 
+```
+fetcher.py -date_from 17.06.2018 -date_to 19.06.2018 -output_dir ./issues --chromedriver /usr/lib/chromium-browser/chromedriver
 ```
 
 ## Scheduling Document Fetching 
