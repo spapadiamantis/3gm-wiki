@@ -31,5 +31,30 @@ python3 scripts/converter.py -input_dir ../data/1998/ -output_dir ../data/1998/ 
 
 ## Step 3: Codification Procedure
 
+1. Populate the database with detected laws
+
+```python
+>>> from codifier import LawCodifier
+>> cod = LawCodifier('../data/new')
+```
+
+2. Get the new laws published at the GG Issues (ΦΕΚ Α') 
+```python
+>> cod.codify_new_laws()
+```
+
+3. Codify the a law using the `codify_law(law)` command (under development)
+```python
+>>> cod.codify_law(ν. 4448/2018')
+```
+
+4. Get a law as a string or export it to PDF via the Texification Tool using `xelatex`
+```python
+# as a string
+>> result = cod.get_law('ν. 4448/2018')
+# or a pdf using xelatex
+>> cod.texify_law('ν. 4448/2018', 'Κωδικοποιημένος_Νόμος.pdf') 
+```
+
 
 
