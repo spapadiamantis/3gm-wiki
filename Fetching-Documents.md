@@ -49,7 +49,7 @@ crontab -e
 Add this command line:
 
 ```
-30 2 * * * /path-to-project/scripts/fetch_daily.sh
+30 2 * * * /path-to-project/scripts/fetch_daily.sh /output/dir
 ```
 
 The crontab parses the following pattern: 
