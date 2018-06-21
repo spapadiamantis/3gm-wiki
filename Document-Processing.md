@@ -75,7 +75,7 @@ optional arguments:
 Example (with `nohup`):
 
 ```bash
-nohup python3 converter.py -input_dir ../data/1998/ -output_dir ../data/1998/ -pdf2txt pdf2txt.py
+nohup python3 converter.py -input_dir ../data/1998/ -output_dir ../data/1998/ -pdf2txt pdf2txt.py &
 ```
 
 
