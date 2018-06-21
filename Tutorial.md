@@ -75,5 +75,8 @@ versions: Array
 ```
 
 ## Step 4: Optional Functionality 
-word2vec and topic models TBA.
+
+1. [Apply Topic Models on Government Gazette Issues](https://github.com/eellak/gsoc2018-3gm/wiki/Topic-Modelling)
+2. And much more! 
+
 
