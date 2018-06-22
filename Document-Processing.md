@@ -90,6 +90,7 @@ Due to continuous integration issues, these datasets are kept in a separate bran
 To get them simply checkout and pull the `datasets` branch via 
 
 ```
+git checkout -b datasets
 git pull origin datasets 
 ```
 
