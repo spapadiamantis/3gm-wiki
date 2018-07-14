@@ -9,9 +9,9 @@ The script __requires__ the [Chrome Driver](http://chromedriver.chromium.org/dow
 Usage: 
 
 ```
-$ ./fetcher.py --help
+$ fetcher.py -h
 usage: fetcher.py [-h] -date_from DATE_FROM -date_to DATE_TO -output_dir
-                  OUTPUT_DIR --chromedriver CHROMEDRIVER
+                  OUTPUT_DIR [--chromedriver CHROMEDRIVER] [--upload]
 
 This is the fetching tool for downloading Government Gazette Issues from the
 ET. For more information visit
@@ -29,6 +29,7 @@ required arguments:
 optional arguments:
   --chromedriver CHROMEDRIVER
                         Chrome driver executable
+  --upload              Upload to database
 ```
 You need to provide the tool with the start and end date in DD.MM.YYYY format and the output directory of the documents. For example: 
 
