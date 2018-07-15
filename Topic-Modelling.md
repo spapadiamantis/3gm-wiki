@@ -29,7 +29,7 @@ The interactive Jupyter Notebook can be found at `src/lda_visualize.ipynb` .
 
 
 
-**References**
+## References
 
 1. [Medium Article](https://medium.com/mlreview/topic-modeling-with-scikit-learn-e80d33668730)
 2. [sklearn Reference Manual](http://scikit-learn.org/stable/modules/generated/sklearn.decomposition.LatentDirichletAllocation.html)
