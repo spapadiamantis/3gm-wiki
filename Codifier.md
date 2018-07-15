@@ -1,6 +1,6 @@
 # Usage 
 
-After following the Installation Instructions Wiki Page you will be able to use the codifier tool provided for this project.  The command line tool is located at `src/codifier.py`. You can use the tool by providing documents in plaintext format as command line arguments. For example:
+After following the Installation Instructions Wiki Page you will be able to use the codifier tool provided for this project.  The command line tool is located at `3gm/codifier.py`. You can use the tool by providing documents in plaintext format as command line arguments. For example:
 
 ### With `--source`, `--target` and `--output` options:
 ```bash
