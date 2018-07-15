@@ -80,3 +80,10 @@ versions: Array
 1. [Apply Topic Models on Government Gazette Issues](https://github.com/eellak/gsoc2018-3gm/wiki/Topic-Modelling)
 2. [Document Embeddings with Doc2Vec](https://github.com/eellak/gsoc2018-3gm/wiki/Doc2Vec)
 
+## Step 5: Deploying Flask Application
+
+1. Navigate to `3gm/`
+2. Run `./run.sh` to deploy the Flask application.
+3. Navigate to localhost:<port> where the application is deployed. 
+ 
+
