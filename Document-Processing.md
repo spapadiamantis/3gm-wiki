@@ -96,30 +96,6 @@ git pull origin datasets
 
 # Document Parsing Modules
 
-### Issue Parser
-
-In order to be codified and processed, each document is parsed through the `IssueParser` class located under `parser.py` in the main module. You can read the docs of the `IssueParser` API via:
-
-```bash
-pydoc parser.py
-```
-
-#### Example Usage of Document Parser
-
-The standalone module can be used via creating `IssueParser`  objects 
-
-```python
-import parser
-issue = parser.IssueParser('issue.txt')
-
-# use one of the API functions described above 
-# e.g. 
-issue.detect_new_laws()
-```
-
-### Law Parser
-
-TBA.
-
+The parsing modules provides is `IssueParser` for parsing Government Gazette Issues and `LawParser` for parsing laws referred in Government Gazette Issues. You can read the docs [here](https://github.com/eellak/gsoc2018-3gm/tree/master/docs).
  
 
