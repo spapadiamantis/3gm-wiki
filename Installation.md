@@ -10,8 +10,6 @@ sudo apt-get update
 sudo apt-get install -y mongodb-org
 ```
 
-
-
 Start MongoDB Database Server with
 
 ```bash
@@ -42,8 +40,5 @@ sudo service mongodb start
 
    This will setup your project. It is advised to install it in a _virtual environment_. 
 
-   ​
-
-   **DISCLAIMER:** Since the project is in its initial development period as a part of GSoC 2018 with GFOSS the setup script **will not** work always. 
 
     
