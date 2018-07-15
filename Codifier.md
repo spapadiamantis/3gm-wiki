@@ -31,11 +31,19 @@ codifier.py --source source.txt --target target.txt | exporter.py markdown > out
 
 ### As a UNIX tool
 
-According to [Unix Philosophy](https://en.wikipedia.org/wiki/Unix_philosophy) 
+According to [Unix Philosophy](https://en.wikipedia.org/wiki/Unix_philosophy) applying multiple amendments to a legal text must also be chained as a _pipelined process_. As for that you can use `codifier.py` in the following way:
 
+Simple Case: 
+```bash
+codifier.py ammendment-1.txt <initial-version.txt >ammended-version.txt
+```
 
-Be sure you have setup the MongoDB server in order to make changes to the database. 
-
+Pipelined example:
+```bash
+<initial-version.txt codifier.py ammendment-1.txt |
+codifier.py ammendment-2.txt |
+codifier.py ammendment-3.txt >final-version.txt
+```
 
 ## Using as a module
 
@@ -50,6 +58,20 @@ import codifier
 ```python
 cod = codifier.LawCodifier('<directory-of-gg-issues>')
 ```
+3. Build the codifier database from existing documents
+Place the documents under a directory `/data` with the following arrangement:
+
+```
+data/YYYY/YYYY*.txt
+```
+
+Then build the database via:
+
+```python
+import codifier
+codifier.codifier = codifier.build(start=1998, end=2018, data_dir='data/') 
+```
+
 
 3. Codify a statute with `codify_law()` method. For example
 
