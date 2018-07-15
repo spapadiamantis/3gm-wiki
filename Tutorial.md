@@ -73,6 +73,7 @@ versions: Array
       _version: 0
       amendee: "ν. 4448/2018"
 ```
+6. For more details [visit the Codifier page](https://github.com/eellak/gsoc2018-3gm/wiki/Codifier)
 
 ## Step 4: Optional Functionality 
 
