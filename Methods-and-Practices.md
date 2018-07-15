@@ -2,7 +2,7 @@
 
 ### Heuristic methods for detecting ammendments
 
-This project uses heuristics for detecting ammendments. You can have a look at `src/syntax.py` module for more information.  
+This project uses heuristics for detecting ammendments. You can have a look at `3gm/syntax.py` module for more information.  
 
 ### Storing data
 
