@@ -52,12 +52,19 @@ codifier.py ammendment-3.txt >final-version.txt
 ```python
 import codifier
 ```
+After importing codifier there is already a global `LawCodifier` object provided under the name `codifier`:
+```python3
+>>> codifier.codifier
+<codifier.LawCodifier object at 0x7fd7e4032208>
+```
 
-2. Create a `LawCodifier` object as 
+2. You can also create a `LawCodifier` object as 
 
 ```python
 cod = codifier.LawCodifier('<directory-of-gg-issues>')
 ```
+In this case the data provided by the issues directory is populated to the database.
+
 3. Build the codifier database from existing documents
 Place the documents under a directory `/data` with the following arrangement:
 
@@ -72,14 +79,9 @@ import codifier
 codifier.codifier = codifier.build(start=1998, end=2018, data_dir='data/') 
 ```
 
+## API Documentation
 
-3. Codify a statute with `codify_law()` method. For example
-
-```python
-cod.codify_law('ν. 1920/1991')
-```
-
-**DISCLAIMER** This is work in progress so it is expected to be unstable. 
+The API Docs are located at `docs/` under the root of this repository. 
 
 
 
