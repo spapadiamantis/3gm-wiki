@@ -71,12 +71,11 @@ versions: Array
       lemmas: Object
       titles: Object
       _version: 0
-      amendee: "20170100001.txt"
+      amendee: "ν. 4448/2018"
 ```
 
 ## Step 4: Optional Functionality 
 
 1. [Apply Topic Models on Government Gazette Issues](https://github.com/eellak/gsoc2018-3gm/wiki/Topic-Modelling)
-2. And much more! 
-
+2. [Document Embeddings with Doc2Vec]([Apply Topic Models on Government Gazette Issues](https://github.com/eellak/gsoc2018-3gm/wiki/Doc2Vec)
 
