@@ -4,7 +4,7 @@ After following the Installation Instructions Wiki Page you will be able to use 
 
 ### With `--source`, `--target` and `--output` options:
 ```bash
-$ python3 codifier.py -h
+$ codifier.py -h
 usage: codifier.py [-h] [--source SOURCE] [--target TARGET] [--output OUTPUT]
 
 This is the command line tool for codifying documents
