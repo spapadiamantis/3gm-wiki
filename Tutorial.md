@@ -77,5 +77,5 @@ versions: Array
 ## Step 4: Optional Functionality 
 
 1. [Apply Topic Models on Government Gazette Issues](https://github.com/eellak/gsoc2018-3gm/wiki/Topic-Modelling)
-2. [Document Embeddings with Doc2Vec]([Apply Topic Models on Government Gazette Issues](https://github.com/eellak/gsoc2018-3gm/wiki/Doc2Vec)
+2. [Document Embeddings with Doc2Vec](https://github.com/eellak/gsoc2018-3gm/wiki/Doc2Vec)
 
