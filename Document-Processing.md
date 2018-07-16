@@ -94,6 +94,8 @@ git checkout -b datasets
 git pull origin datasets 
 ```
 
+You can also download *scraped PDFs in txt format* from [here](https://pithos.okeanos.grnet.gr/public/7Z2GQvF0boDbCjYWFnmyc)
+
 # Document Parsing Modules
 
 The parsing modules provides is `IssueParser` for parsing Government Gazette Issues and `LawParser` for parsing laws referred in Government Gazette Issues. You can read the docs [here](https://github.com/eellak/gsoc2018-3gm/tree/master/docs).
