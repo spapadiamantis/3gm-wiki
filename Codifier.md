@@ -2,7 +2,7 @@
 
 After following the Installation Instructions Wiki Page you will be able to use the codifier tool provided for this project.  The command line tool is located at `3gm/codifier.py`. You can use the tool by providing documents in plaintext format as command line arguments. For example:
 
-### With `--source`, `--target` and `--output` options:
+## With `--source`, `--target` and `--output` options:
 ```bash
 $ codifier.py -h
 usage: codifier.py [-h] [--source SOURCE] [--target TARGET] [--output OUTPUT]
@@ -29,7 +29,7 @@ You can pipeline it using the exporter script to get the output in Markdown:
 codifier.py --source source.txt --target target.txt | exporter.py markdown > output.md
 ```
 
-### As a UNIX tool
+## As a UNIX tool
 
 According to [Unix Philosophy](https://en.wikipedia.org/wiki/Unix_philosophy) applying multiple amendments to a legal text must also be chained as a _pipelined process_. As for that you can use `codifier.py` in the following way:
 
@@ -55,7 +55,7 @@ As arguments for the exporting tool `exporter.py` you can also use:
  * `--str` for one-line string
  * `--plaintext` for plaintext.
 
-## Use as a module
+# Use as a module
 
 1. Import by 
 
@@ -89,7 +89,7 @@ import codifier
 codifier.codifier = codifier.build(start=1998, end=2018, data_dir='data/') 
 ```
 
-## Use via the flask application
+# Use via the flask application
 
 1. Setup the database 
 2. Deploy the flask application (inside `3gm` directory) via:
