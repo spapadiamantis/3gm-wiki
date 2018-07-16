@@ -33,17 +33,27 @@ codifier.py --source source.txt --target target.txt | exporter.py markdown > out
 
 According to [Unix Philosophy](https://en.wikipedia.org/wiki/Unix_philosophy) applying multiple amendments to a legal text must also be chained as a _pipelined process_. As for that you can use `codifier.py` in the following way:
 
-Simple Case: 
+1. Simple Case: 
 ```bash
 codifier.py ammendment-1.txt <initial-version.txt >ammended-version.txt
 ```
-
-Pipelined example:
+2. Pipelined example:
 ```bash
 <initial-version.txt codifier.py ammendment-1.txt |
 codifier.py ammendment-2.txt |
-codifier.py ammendment-3.txt >final-version.txt
+codifier.py ammendment-3.txt > final-version.txt
 ```
+3. Exporting to a different format 
+```bash
+<initial-version.txt codifier.py ammendment-1.txt |
+codifier.py ammendment-2.txt |
+codifier.py ammendment-3.txt | exporter.py --markdown > final-version.md
+```
+As arguments for the exporting tool `exporter.py` you can also use:
+ * `--latex` for (Xe)LaTeX
+ * `--issue` for Issue-Like format
+ * `--str` for one-line string
+ * `--plaintext` for plaintext.
 
 ## Using as a module
 
