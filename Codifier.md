@@ -1,4 +1,4 @@
-# Usage 
+# Use as command line tool
 
 After following the Installation Instructions Wiki Page you will be able to use the codifier tool provided for this project.  The command line tool is located at `3gm/codifier.py`. You can use the tool by providing documents in plaintext format as command line arguments. For example:
 
@@ -55,7 +55,7 @@ As arguments for the exporting tool `exporter.py` you can also use:
  * `--str` for one-line string
  * `--plaintext` for plaintext.
 
-## Using as a module
+## Use as a module
 
 1. Import by 
 
@@ -87,6 +87,14 @@ Then build the database via:
 ```python
 import codifier
 codifier.codifier = codifier.build(start=1998, end=2018, data_dir='data/') 
+```
+
+## Use via the flask application
+
+1. Setup the database 
+2. Deploy the flask application (inside `3gm` directory) via:
+```bash
+./run.sh
 ```
 
 ## API Documentation
