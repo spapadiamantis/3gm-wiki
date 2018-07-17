@@ -74,7 +74,7 @@ model = g.Doc2Vec(taggeddocs, size=vector_size, window=window_size, min_count=mi
 model.save('laws_model.bin')
 ```
 
-6. The full script is located at  `train_doc2vec`
+6. The full script is located at  `train_doc2vec.py`
 
 ## Step 2: Getting similar words or documents
 
