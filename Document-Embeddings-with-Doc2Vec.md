@@ -48,7 +48,7 @@ worker_count = cpu_count() - 1
 3. Get the labels 
 
 ```python
-with open(labels_file, 'r') as f:
+with open('labels.txt', 'r') as f:
 	labels = f.read().splitlines()
 ```
 
