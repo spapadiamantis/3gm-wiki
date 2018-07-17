@@ -28,8 +28,10 @@ from multiprocessing import cpu_count
 
 #enable logging
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
-
 ```
+
+
+
 2. Define parameters (you can adjust them to obtain different results
 
 ```python3
@@ -42,7 +44,7 @@ negative_size = 5
 train_epoch = 50
 dm = 0 #0 = dbow; 1 = dmpv
 worker_count = cpu_count() - 1
-
+```
 3. Get the labels 
 
 ```python
