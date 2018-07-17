@@ -17,7 +17,7 @@ Finally, a sequence of commands is generated, checked and then executed. For ins
 
 ## Method
 
-An example method would be the following _heuristic_ method:
+We are using the following method to detect amendments
 
 ```
 For each command
