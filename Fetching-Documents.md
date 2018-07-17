@@ -73,3 +73,9 @@ The daemon may need restart. For Debian-based systems:
 ```bash
 sudo service crond restart
 ``` 
+
+If you want to upload the newly fetched files to the database use the `--upload` flag.
+
+
+
+
