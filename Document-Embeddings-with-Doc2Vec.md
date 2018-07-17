@@ -8,7 +8,7 @@ This page is intended on building a similarity analyzer (like Topic Modelling wi
 >>> cod = codifier.build(start=1999, end=2018, data_dir='<data-dir>')
 ```
 
-Export the whole corpus via
+2. Export the whole corpus via
 ```python3 
 >>> cod.export_codifier_corpus('corpus.txt', 'labels.txt')
 ```
