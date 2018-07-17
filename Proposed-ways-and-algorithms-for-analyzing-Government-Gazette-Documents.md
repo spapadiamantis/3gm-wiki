@@ -13,9 +13,9 @@ The dataset should be split and commands should be extracted from the main bodie
 1. Η Τελική Μητρική Οντότητα ενός Ομίλου Πολυεθνικής Επιχείρησης (Ομίλου ΠΕ) που έχει τη φορολογική της κατοικία στην Ελλάδα ή οποιαδήποτε άλλη Αναφέρουσα Οντότητα, σύμφωνα με το Παράρτημα ΙΙΙ Τμήμα ΙΙ, υποβάλλει την Έκθεση ανά Χώρα όσον αφορά το οικείο Φορολογικό Έτος Υποβολής Εκθέσεων εντός δώδεκα (12) μηνών από την τελευταία ημέρα του Φορολογικού 
 Έτους Υποβολής Εκθέσεων του Ομίλου ΠΕ, σύμφωνα με το Παράρτημα ΙΙΙ Τμήμα ΙΙ.
 
-Classification of commands could be achieved using lemmatizing and then categorization techniques such as heuristic methods, correlation techniques (like weighted hamming distance in order to detect certain keywords which will assist in classification), Markov Chains, Naive Bayesian Classification, word2vec or custom Multi-Layer Perceptron Models (e.g. we could use a syntax analyser that recognizes nouns, verbs etc. based on LSTM networks with word embeddings or predict how likely is for a word to be a keyword). The data would be splitted into test and training (which should be labeled) so that the models (if used) could be trained. Then a block consisting of the main body would be added / cross-linked to the corresponding law document or Greek documents. Added to this the named entities such as organizations and public services could be extracted as well. Finally, a sequence of commands is generated, checked and then executed. For instance the above Command would add an article after another article in already merged law. 
+Finally, a sequence of commands is generated, checked and then executed. For instance the above Command would add an article after another article in already merged law. 
 
-## Example Method / Algorithm
+## Method
 
 An example method would be the following _heuristic_ method:
 
