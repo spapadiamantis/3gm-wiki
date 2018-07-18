@@ -1,4 +1,4 @@
-# Proposed ways and algorithms for analyzing Government Gazette Documents
+# Algorithms for analyzing Government Gazette Documents
 
 To start with the typical structure a GG (e.g. FEK 1881) document contains articles each of which contains directions such as alterations, additions or deletions of sections such as paragraphs in other legal documents or the creation of new ones referred as “commands”. The whole GG document is signed by the competent ministers listed at the end of the documents. Then the main body of the article that has to be merged in another law or create a new law by its own.
 The dataset should be split and commands should be extracted from the main bodies using named entity recognition for identifying Law IDs (defined as regular expressions) and separating commands from main bodies which are going to be altered. For example (taken from GG):
