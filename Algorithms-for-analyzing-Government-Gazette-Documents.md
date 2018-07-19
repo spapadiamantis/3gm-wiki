@@ -94,7 +94,7 @@ In our example `προστίθεται` signifies an addition.
 
 After the detection of the `ROOT` we must detect the subject of the amendment. In our case the subject are two paragraphs (παράγραφοι). For this purpose we use the [spaCy project](https://github.com/eellak/gsoc2018-spacy) to detect the subject that is dependent to the `ROOT`. In our case: 
 
-![Dependency Visualisation](/home/marios/workspace/gsoc2018-3gm.wiki/spacy.png)
+![Dependency Visualisation](spacy.png)
 
 We want the `nsubj` dependency (in nominative). We have detected that the dependency is in plural form and refers to paragraphs 3 and 4. So we must split the content inside the quotation marks into two subsections. For each subsection, we must detect the rest dependencies. For this purpose we have built a lookup of the _stems_: 
 
