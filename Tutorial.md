@@ -17,7 +17,7 @@ data/
   |-   file2.{pdf,txt}
      ...
   |-   filen.{pdf,txt}
-```   
+```
 
 3. If the data is already in `.txt` format then you can head over [Step 3](#step-3-codification-procedure)
 
@@ -27,7 +27,7 @@ If the documents are in PDF format (either contain text or not) you should conve
 
 ```
 python3 scripts/converter.py -input_dir ../data/1998/ -output_dir ../data/1998/ -pdf2txt pdf2txt.py
-```   
+```
 
 ## Step 3: Codification Procedure
 
@@ -85,5 +85,19 @@ versions: Array
 1. Navigate to `3gm/`
 2. Run `./run.sh` to deploy the Flask application.
 3. Navigate to localhost:<port> where the application is deployed. 
- 
+
+
+
+## Running Unit tests
+
+You can run unit tests with `pytest`:
+
+```bash
+cd 3gm/
+pytest tests.py
+```
+
+
+
+
 
