@@ -198,13 +198,6 @@ That is passed to the `LawParser` class, the operation is processed on the `LawP
 
 
 
-#### Testing on examples
+#### Testing on real examples
 
 For more examples look at `examples/examples.md` and the `/syntax` route at the web application.
-
-
-
-
-
-
-

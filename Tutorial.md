@@ -99,5 +99,32 @@ pytest tests.py
 
 
 
+## Deploying on a virtual machine
+
+Follow [this guide](https://medium.com/ymedialabs-innovation/deploy-flask-app-with-nginx-using-gunicorn-and-supervisor-d7a93aa07c18) to deploy the flask application with nginx and gunicorn. 
+
+Run gunicorn via:
+
+```bash
+gunicorn app:app -b localhost:8000
+```
+
+Configuration file at `/etc/nginx/conf.d/virtual.conf`
+
+```
+server {
+    listen       80;
+    server_name  hostname;
+
+    location / {
+        proxy_pass http://127.0.0.1:8000;
+    }
+}
+```
+
+
+
+
+
 
 
