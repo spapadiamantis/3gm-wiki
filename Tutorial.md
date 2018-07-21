@@ -106,7 +106,7 @@ Follow [this guide](https://medium.com/ymedialabs-innovation/deploy-flask-app-wi
 Run gunicorn via:
 
 ```bash
-gunicorn app:app -b localhost:8000
+gunicorn --workers NWORKERS app:app -b localhost:8000
 ```
 
 Configuration file at `/etc/nginx/conf.d/virtual.conf`
