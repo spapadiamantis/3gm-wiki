@@ -122,6 +122,22 @@ server {
 }
 ```
 
+Supervisor configuration:
+
+```
+[program:3gm]
+directory=/var/www/gsoc2018-3gm/3gm
+command=gunicorn --workers 3 app:app -b localhost:8000
+autostart=true
+autorestart=true
+stderr_logfile=/var/log/3gm.err.log
+stdout_logfile=/var/log/3gm.out.log
+```
+
+
+
+
+
 
 
 
