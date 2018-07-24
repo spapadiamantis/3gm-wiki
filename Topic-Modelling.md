@@ -194,5 +194,5 @@ python3 topic_models.py --spacy
 1. [Medium Article](https://medium.com/mlreview/topic-modeling-with-scikit-learn-e80d33668730)
 2. [sklearn Reference Manual](http://scikit-learn.org/stable/modules/generated/sklearn.decomposition.LatentDirichletAllocation.html)
 3. Blei, David M., Andrew Y. Ng, and Michael I. Jordan. "Latent dirichlet allocation." *Journal of machine Learning research* 3.Jan (2003): 993-1022.
-4. [Latent Dirichlet Allocation](https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation)
+4. [Latent Dirichlet Allocation, Wikipedia](https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation)
 
