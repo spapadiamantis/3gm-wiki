@@ -1,14 +1,14 @@
 # Latent Dirichlet Allocation
 
-## What is Latent Dirichlet Allocation and Non-Negative Matrix Factorization?
+LDA is an algorithm that is used to discover the topics that are in a text. **Topic modeling** is an unsupervised model for detecting topics in a corpus and categorizing similar texts. Assume that you have some documents, for example Government Gazette Documents, and you want to cluster them to similar topics, hence LDA is a perfect fit.  The algorithms work in a different way regarding their mathematics.  We are going to use `sklearn` for topic modeling and clustering to similar topics. 
 
-LDA is an algorithm that is used to discover the topics that are in a text. Topic modelling is an unsupervised model for detecting topics in a corpus and categorizing similar texts. Assume that you have some documents, for example Government Gazette Documents, and you want to cluster them to similar topics. Then LDA or NMF are ideal for this. The algorithms work in a different way regarding their mathematics.  We are going to use `sklearn` for topic modelling and clustering to similar topics. 
+In LDA, each document may be viewed as a [mixture](https://en.wikipedia.org/wiki/Mixture_model) of various topics where each document is considered to have a set of topics that are assigned to it via LDA. This is identical to [probabilistic latent semantic analysis](https://en.wikipedia.org/wiki/PLSA) (pLSA), except that in LDA the topic distribution is assumed to have a sparse [Dirichlet](https://en.wikipedia.org/wiki/Dirichlet_distribution) [prior](https://en.wikipedia.org/wiki/Prior_probability). The sparse Dirichlet priors encode the intuition that documents cover only a small set of topics and that topics use only a small set of words frequently. In practice, this results in a better disambiguation of words and a more precise assignment of documents to topics. LDA is a generalization of the [pLSA](https://en.wikipedia.org/wiki/PLSA) model, which is equivalent to LDA under a uniform Dirichlet prior distribution.
 
 The code is located at `3gm/topic_models.py`
 
-## Topic Modelling Proceedure
+## Topic Modeling Procedure
 
-The proposed way of modelling the topics is:
+The proposed way of modeling the topics is:
 
 1. Parse raw texts
 2. Remove punctuation numbers
@@ -25,8 +25,6 @@ The pipeline is illustrated below:
 We can further our work by searching for connected components in the graph using a graph search algorithm such as Breadth-First Search. 
 
 A visualization of topic models can be done using the `pyLDAvis` library. The interactive Jupyter Notebook can be found at `src/lda_visualize.ipynb` . Some example LDA models are located in the `models` directory. 
-
-
 
 ## Building Topic Models from the `codifier`
 
@@ -181,8 +179,6 @@ yields the following topic
 } 
 ```
 
-
-
 ## Invoking spaCy lemmatizer for the Greek Language
 
 For further improving the lemmatization process for topic extraction we are also using the spaCy's lemmatizer for the Greek Language via the `word._lemma` attribute.
@@ -190,14 +186,13 @@ For further improving the lemmatization process for topic extraction we are also
 In case you want to invoke spaCy's lemmatizer along with the lookup, you can do this by running:
 
 ```bash
-python3 topic_models.py --spacy
+python3 topic_models.py --spacy    
 ```
-
-​    
 
 ## References
 
 1. [Medium Article](https://medium.com/mlreview/topic-modeling-with-scikit-learn-e80d33668730)
 2. [sklearn Reference Manual](http://scikit-learn.org/stable/modules/generated/sklearn.decomposition.LatentDirichletAllocation.html)
 3. Blei, David M., Andrew Y. Ng, and Michael I. Jordan. "Latent dirichlet allocation." *Journal of machine Learning research* 3.Jan (2003): 993-1022.
+4. [Latent Dirichlet Allocation](https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation)
 
