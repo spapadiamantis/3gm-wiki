@@ -13,19 +13,20 @@ The proposed way of modelling the topics is:
 1. Parse raw texts
 2. Remove punctuation numbers
 3. Filter out words considered "junk" (i.e. really small words)
-4. Lemmatize everything using Greek Lemmatizer provided from this GSoC project [which adds the Greek Language to spaCy](https://github.com/eellak/gsoc2018-spacy).  
-5. Run LDA and NMF Algorithms and extract topics (optionally using grid search) to find the best parameters
-6. Gather topics to a graph
+4. Lemmatize everything using Greek Lemmatizer provided from this GSoC project [which adds the Greek Language to spaCy](https://github.com/eellak/gsoc2018-spacy) and lookup provided at `resources/greek_lemmas.py`.   
+5. Run LDA to extract topics (optionally using grid search) to find the best parameters
+6. Gather topics to a graph.
+7. Store to MongoDB collection.
 
-We can further our work by searching for connected components in the graph using a graph search algorithm such as Breadth-First Search
+The pipeline is illustrated below:
 
-A visualization of topic models can be done using the `pyLDAvis` library. An example of this visualization is illustrated below:
+![pipeline](pipeline_topics.png)
 
-![pyldavis](/home/marios/workspace/gsoc2018-3gm.wiki/pldavis.png)
+We can further our work by searching for connected components in the graph using a graph search algorithm such as Breadth-First Search. 
+
+A visualization of topic models can be done using the `pyLDAvis` library. The interactive Jupyter Notebook can be found at `src/lda_visualize.ipynb` . Some example LDA models are located in the `models` directory. 
 
 
-
-The interactive Jupyter Notebook can be found at `src/lda_visualize.ipynb` . 
 
 ## Building Topic Models from the `codifier`
 
@@ -180,6 +181,19 @@ yields the following topic
 } 
 ```
 
+
+
+## Invoking spaCy lemmatizer for the Greek Language
+
+For further improving the lemmatization process for topic extraction we are also using the spaCy's lemmatizer for the Greek Language via the `word._lemma` attribute.
+
+In case you want to invoke spaCy's lemmatizer along with the lookup, you can do this by running:
+
+```bash
+python3 topic_models.py --spacy
+```
+
+​    
 
 ## References
 
