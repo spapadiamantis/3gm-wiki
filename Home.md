@@ -1,16 +1,10 @@
-Welcome to the gsoc2018-3gm wiki!
-
-This wiki hosts the Government Gazzette Text Mining and Codification Project for Google Summer of Code 2018 project by GFOSS-OTA
-
-## Abstract
-
-### Problem Statement
+## Problem Statement
 
 In the recent years plenty of attention has been gathering around analyzing public sector texts via text mining methods enabled by modern libraries, algorithms and practices and bought to to the forefront by open source projects such as textblob, spaCy, SciPy, Tensorflow and NLTK. These collaborative productive efforts seem to be a shift towards more efficient understanding of natural language by machines which can be used in conjunction with public documents in order to provide a more robust organization and codification in the legal sector.  
 
 This proposal  aims to extend the existing Government Gazette (GG) text mining code by implementing features in order to organize and (cross)-link GG texts with legal texts and detect the signatories via heuristic and machine learning methods. This will enable elimination of bureaucratic processes and huge time savings for jurists who for example seek legal documents in legal databases.
 
-### Project Proposal
+## Project Proposal
 
 For this purpose, the GG documents have to be downloaded as PDFs and parse them to raw text files. Heuristic rules and Named Entity Recognition methodologies have to be applied in order to detect competent ministers and references to other legal texts which will be converted into hypertext format.
 
