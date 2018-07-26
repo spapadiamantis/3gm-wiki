@@ -25,4 +25,4 @@ Your contribution is more than helpful! We would like [to hear your opinion](#Co
 
 ## Contact
 
-Send us an email to [info AT ellak DOT gr](mailto: info@ellak.gr)
+Send us an email to [info AT ellak DOT gr](mailto:info@ellak.gr)
