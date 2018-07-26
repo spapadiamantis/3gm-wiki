@@ -30,5 +30,17 @@ We can therefore let the significance σ(x) of each page be given as:
 
 </p>
 
+This is indeed the definition of a stationary distribution. 
 
+How are we going to make the graph which has more than one connected components one connected component?
+
+The idea is pretty simple. Consider tossing a coin with probability α of being heads. Therefore we can define the following transition probabilities for the set of pages V.
+
+<p align="center">
+
+<img src="eq4.png">
+
+</p>
+
+The Markov Chain with probabilities p(x,y) will give σ(x) > 0 for all pages in the graph.
 
