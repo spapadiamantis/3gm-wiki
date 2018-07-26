@@ -44,7 +44,7 @@ The idea is pretty simple. Consider tossing a coin with probability α of being 
 
 The Markov Chain with probabilities p(x,y) will give σ(x) > 0 for all pages in the graph. 
 
-For more information visit [[1](http://www.math.ntua.gr/~loulakis/info/Markov_grad_Current_files/9759_loulakis.pdf)]. 
+For more information visit [[1](http://www.math.ntua.gr/~loulakis/info/Markov_grad_Current_files/9759_loulakis.pdf), pp. 106-107]. 
 
 ## Why is this important to rank laws? 
 
