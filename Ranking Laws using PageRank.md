@@ -42,7 +42,9 @@ The idea is pretty simple. Consider tossing a coin with probability α of being 
 
 </p>
 
-The Markov Chain with probabilities p(x,y) will give σ(x) > 0 for all pages in the graph.
+The Markov Chain with probabilities p(x,y) will give σ(x) > 0 for all pages in the graph. 
+
+For more information visit [[1](http://www.math.ntua.gr/~loulakis/info/Markov_grad_Current_files/9759_loulakis.pdf)]. 
 
 ## Why is this important to rank laws? 
 
@@ -77,3 +79,6 @@ def pagerank(self):
 
 A law with greater significance is referred more often and it would be a good idea if it will be merged with others less significant ones in **semantic level**. 
 
+## References
+
+1. [M. Loulakis, _Stochastic Processes_, Kallipos Repository, pp. 106-107](http://www.math.ntua.gr/~loulakis/info/Markov_grad_Current_files/9759_loulakis.pdf)
