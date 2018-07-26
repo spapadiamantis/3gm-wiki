@@ -8,7 +8,7 @@ This wiki hosts the Government Gazzette Text Mining and Codification Project for
 
 In the recent years plenty of attention has been gathering around analyzing public sector texts via text mining methods enabled by modern libraries, algorithms and practices and bought to to the forefront by open source projects such as textblob, spaCy, SciPy, Tensorflow and NLTK. These collaborative productive efforts seem to be a shift towards more efficient understanding of natural language by machines which can be used in conjunction with public documents in order to provide a more robust organization and codification in the legal sector.  
 
-This proposal  aims to extend the existing Government Gazette (GG) text mining code by implementing features in order to organize and (cross)-link GG texts with legal texts and detect the signatories via heuristic and machine learning methods. This will enable elimination of bureaucratic processes and huge time savings for jurists who for example seek legal documents in the ISOKRATIS database of legal texts (which is an applicable case study).   
+This proposal  aims to extend the existing Government Gazette (GG) text mining code by implementing features in order to organize and (cross)-link GG texts with legal texts and detect the signatories via heuristic and machine learning methods. This will enable elimination of bureaucratic processes and huge time savings for jurists who for example seek legal documents in legal databases.
 
 ### Project Proposal
 
