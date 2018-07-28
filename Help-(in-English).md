@@ -3,7 +3,7 @@
 
 ## Navigation
 
-1. Enter a legal document (eg, 4009/2011, p. 4547/2018, pp. 1/2018) on the home page or a thematic section, such as ** education ** / **παιδεία**.
+1. Enter a legal document (eg, ν. 4009/2011, ν. 4547/2018, π.δ. 1/2018) on the home page or a thematic section, such as **education** / **παιδεία**.
 
    ![](help/01.png)
    ![](help/0.png)
