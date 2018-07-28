@@ -35,21 +35,28 @@ According to [Unix Philosophy](https://en.wikipedia.org/wiki/Unix_philosophy) ap
 
 1. Simple Case: 
 ```bash
-codifier.py ammendment-1.txt <initial-version.txt >ammended-version.txt
+python3 law_codifier.py ../../examples/20180100102.txt initial-out.txt  <../../examples/initial-version.txt > final-version.txt
 ```
 2. Pipelined example:
 ```bash
-<initial-version.txt codifier.py ammendment-1.txt |
-codifier.py ammendment-2.txt |
-codifier.py ammendment-3.txt > final-version.txt
+<initial-version.txt codifier.py ammendment-1.txt initial-1-out.txt |
+codifier.py ammendment-2.txt initial-2-out.txt |
+codifier.py ammendment-3.txt initial-3-out.txt > final-version.txt
 ```
 3. Exporting to a different format 
 ```bash
-<initial-version.txt codifier.py ammendment-1.txt |
-codifier.py ammendment-2.txt |
-codifier.py ammendment-3.txt | exporter.py --markdown > final-version.md
+<initial-version.txt python3 codifier.py ammendment-1.txt | python3 exporter.py --markdown > final-version.md
 ```
+4. You can use `diff` to see the differences in the new legal text compared to the old one
+
+   ```bash
+   diff final-version.txt initial-out-txt
+   ```
+
+### Exporting Arguments 
+
 As arguments for the exporting tool `exporter.py` you can also use:
+
  * `--latex` for (Xe)LaTeX
  * `--issue` for Issue-Like format
  * `--str` for one-line string
