@@ -2,33 +2,6 @@
 
 After following the Installation Instructions Wiki Page you will be able to use the codifier tool provided for this project.  The command line tool is located at `3gm/codifier.py`. You can use the tool by providing documents in plaintext format as command line arguments. For example:
 
-## With `--source`, `--target` and `--output` options:
-```bash
-$ codifier.py -h
-usage: codifier.py [-h] [--source SOURCE] [--target TARGET] [--output OUTPUT]
-
-This is the command line tool for codifying documents
-
-optional arguments:
-  -h, --help       show this help message and exit
-
-optional arguments:
-  --source SOURCE  Source Statute
-  --target TARGET  Target Statute
-  --output OUTPUT  Output file
-```
-
-For example
-```bash
-codifier.py --source source.txt --target target.txt --output output.txt
-```
-If the `--output` flag is omitted, the output is sent to `stdout`. 
-You can pipeline it using the exporter script to get the output in Markdown:
-
-```bash
-codifier.py --source source.txt --target target.txt | exporter.py markdown > output.md
-```
-
 ## As a UNIX tool
 
 According to [Unix Philosophy](https://en.wikipedia.org/wiki/Unix_philosophy) applying multiple amendments to a legal text must also be chained as a _pipelined process_. As for that you can use `codifier.py` in the following way:
