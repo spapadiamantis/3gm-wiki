@@ -1,44 +1,66 @@
 # Installation
 
-## Setting up MongoDB on Ubuntu 16.04
+This page will guide you through the installation process using a [the provided Makefile](https://github.com/eellak/gsoc2018-3gm/blob/master/Makefile). You can build various modules of the project using this Makefile. We chose to use GNU Make because the project is not vanilla Python and `make` is [target-agnostic](https://whatis.techtarget.com/definition/agnostic). 
 
-Install MongoDB via the following commands (taken from the official https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/ MongoDB website): 
+## Installing main module (core functionality)
+
+To install the main module including:
+
+1.  Core modules
+2. MongoDB Integration
+3. Web Application
+4. NLP Toolkit
+
+use the following command:
+
 ```bash
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
-echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.6 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.6.list
-sudo apt-get update
-sudo apt-get install -y mongodb-org
+make core
 ```
 
-Start MongoDB Database Server with
+If you want to build the full codifier pipeline:
+
+Export the `CODIFIER_DATA` environment variable:
 
 ```bash
-sudo service mongodb start
+export CODIFIER_DATA=/home/to/codifier/texts
 ```
 
+And run `make`:
 
+```bash
+make codifier_pipeline
+```
 
-## Installing `3gm` via `setup.py` script
+If you want to run the web application:
 
-1. Clone the project to your workspace via
+```bash
+make run_web_application
+```
 
-   ```bash
-   git clone https://github.com/eellak/gsoc2018-3gm
-   ```
+## Installing scripts
 
-2. Install Python 3 and `setuptools`
+Installing the scripts includes:
 
-   ```bash
-   sudo apt-get install python3 python3-setuptools
-   ```
+1. Tesseract 4.0
+2. pyocr
+3. pdfminer.six
+4. Chromedriver w. selenium
 
-3. Setup project via `setup.py` script
+To install the scripts: 
 
-   ```bash
-   cd <your-path>/3gm && sudo python3 setup.py install
-   ```
+```bash
+make scripts
+```
 
-   This will setup your project. It is advised to install it in a _virtual environment_. 
+To schedule cron jobs:
 
+```bash
+make schedule_cronjobs
+```
 
-    
+If you want to install both (core and scripts) you can type:
+
+```bash
+make all
+```
+
