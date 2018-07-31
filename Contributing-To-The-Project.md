@@ -1,4 +1,20 @@
-# Contributing to the project
+# Contributing to the protject
+
+## Future Work
+
+### Training statistical models with custom tag maps
+
+In order to further improve the accuracy of the amendment detection algorithm, we propose [training a statistical model](https://spacy.io/usage/training) with a [custom tag map with custom parts of speech (POS)](https://spacy.io/api/tagger). This training can be done with tools such as [prodigy.ai](https://spacy.io/api/tagger) in order to construct [a custom treebank](https://github.com/papachristoumarios/UD_Greek-GDT) with the needed dependencies. Then we can detect the amendment with a simple [tree traversal](https://en.wikipedia.org/wiki/Tree_traversal). 
+
+### Differential versioning with MongoDB
+
+In this stage the various versions of the statutes are kept in records in GridFS. In order to minify the chunks created by GridFS we propose the development of differential versioning for keeping track of the history. This can be done via invoking the [`diff`](https://en.wikipedia.org/wiki/Diff) UNIX tool. The goal is to build a tool like `git` (or even migrate completely to git).
+
+
+
+Any further feedback on future improvements and work is always appreciated. 
+
+---
 
 ## For lawyers
 
