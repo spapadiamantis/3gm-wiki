@@ -77,6 +77,8 @@ Place the documents under a directory `/data` with the following arrangement:
 data/YYYY/YYYY*.txt
 ```
 
+The **API Docs** are located at docs/ under the root of this repository. 
+
 Then build the database via:
 
 ```python
@@ -91,16 +93,6 @@ codifier.codifier = codifier.build(start=1998, end=2018, data_dir='data/')
 ```bash
 ./run.sh
 ```
-
-## API Documentation
-
-The API Docs are located at `docs/` under the root of this repository. 
-
-
-
-
-
-
 
 
 
