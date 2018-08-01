@@ -10,7 +10,13 @@ The technologies being used in the project are Python 3.x with an NLP toolkit an
 
 The web application that is hosted at [3gm.papachristoumarios.me](http://3gm.papachristoumarios.me) is developed using the Flask Web Micro-framework. The web application also comes with a RESTful API via which the information is accessible to via requests. 
 
-![](architecture/1.png)
+<p align="center">
+
+<img src="architecture/1.png">
+
+</p>
+
+
 
 ### Building and Deployment
 
@@ -22,9 +28,11 @@ The building and deployment procedure is done via GNU Make in a provided Makefil
 
 ### General
 
- ![](architecture/2.png)
+ <p align="center">
 
+<img src="architecture/2.png">
 
+</p>
 
 The documents are being parsed by the parser and the parser objects / issue object are generated. After that, the issues are scanned using regular expressions for new statutes. The new statutes are placed on different objects (statute objects). Then the main object (the codifier) is responsible for cross-linking the existing issues together. Then the links and the statutes are passed to the amendment detection algorithm and the new versions are generated. The statutes and links are kept in a document-based database schema  (MongoDB) via serialization. The versioning system which consists of large documents is kept in GridFS. Finally there are options for checkout and rollback on existing statutes and links. 
 
@@ -34,9 +42,11 @@ The pipelined process of codification consists of the following parts:
 
 
 
-![](architecture/3.png)
+<p align="center">
 
+<img src="architecture/3.png">
 
+</p>
 
 
 
