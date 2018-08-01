@@ -11,7 +11,7 @@ To install the main module including:
 3. Web Application
 4. NLP Toolkit
 
-use the following command:
+use the following command (with sudo):
 
 ```bash
 make core
@@ -46,7 +46,7 @@ Installing the scripts includes:
 3. pdfminer.six
 4. Chromedriver w. selenium
 
-To install the scripts: 
+To install the scripts (with sudo): 
 
 ```bash
 make scripts
@@ -58,7 +58,7 @@ To schedule cron jobs:
 make schedule_cronjobs
 ```
 
-If you want to install both (core and scripts) you can type:
+If you want to install both (core and scripts) you can type (with sudo):
 
 ```bash
 make all

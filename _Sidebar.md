@@ -1,8 +1,9 @@
 * **Getting started**
   * [Home](https://github.com/eellak/gsoc2018-3gm/wiki)
   * [Installation](https://github.com/eellak/gsoc2018-3gm/wiki/Installation)
-  * [Tutorial](https://github.com/eellak/gsoc2018-3gm/wiki/Tutorial)
+  * [Tutorial](https://github.com/eellak/gsoc2018-3gm/wiki/Operation)
   * [Codifier](https://github.com/eellak/gsoc2018-3gm/wiki/Codifier)
+  * [Architecture](https://github.com/eellak/gsoc2018-3gm/wiki/Architecture)
   * [Final Progress Report](https://github.com/eellak/gsoc2018-3gm/wiki/Final-Report-for-Google-Summer-of-Code-2018)
 * **Algorithms**
   * [Amendment Detection](https://github.com/eellak/gsoc2018-3gm/wiki/Algorithms-for-analyzing-Government-Gazette-Documents)
