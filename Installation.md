@@ -1,4 +1,4 @@
-# Installation
+# Installation (for Debian-based systems)
 
 This page will guide you through the installation process using a [the provided Makefile](https://github.com/eellak/gsoc2018-3gm/blob/master/Makefile). You can build various modules of the project using this Makefile. We chose to use GNU Make because the project is not vanilla Python and `make` is [target-agnostic](https://whatis.techtarget.com/definition/agnostic). 
 

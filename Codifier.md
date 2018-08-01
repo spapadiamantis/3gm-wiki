@@ -45,6 +45,7 @@ codifier.py ammendment-3.txt initial-3-out.txt > final-version.txt
 
 As arguments for the exporting tool `exporter.py` you can also use:
 
+ * `--markdown` for Markdown
  * `--latex` for (Xe)LaTeX
  * `--issue` for Issue-Like format
  * `--str` for one-line string

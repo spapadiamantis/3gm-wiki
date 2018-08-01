@@ -1,6 +1,6 @@
 # RESTful API 
 
-## Endpoints
+## API Endpoints
 
 You can access the application data via a _RESTful API_. Below there are some basic endpoints (GET):
 
@@ -13,8 +13,10 @@ To get the versions of a law.
 Example: 
 
 ```
-/get_law/ν./4009/2011
+/get_law/l/4009/2011
 ```
+
+The `statute_type` can be either `l` for law (ν.) or `pd` for Presidential Decree. 
 
 In the same way you can get the links to the law and its topics. The endpoints (GET) for this are 
 
@@ -26,7 +28,7 @@ In the same way you can get the links to the law and its topics. The endpoints (
 You can also check the syntax api via the resource: 
 
 ```
-/syntax_api/string:s
+/get_syntax/string:s
 ```
 
 
