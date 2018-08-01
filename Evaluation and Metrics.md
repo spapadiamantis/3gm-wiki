@@ -4,7 +4,7 @@
 
 ### Detection Accuracy
 
-Consider a statute and the links that point to it (in paragraph level). We consider applying the links in chronological order. We define the _Detection Accuracy _as:
+Consider a statute and the links that point to it (in paragraph level). We consider applying the links in chronological order. We define the _Detection Accuracy_ as:
 
 <p align='center'>
 
