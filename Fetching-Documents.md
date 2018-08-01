@@ -4,7 +4,7 @@
 
 There is the `fetcher.py` tool with which you can fetch documents providing the start date, end date and output directory. It uses the `selenium` package and the Chromium Driver. The tool is located under `scripts/fetcher.py`. 
 
-The script __requires__ the [Chrome Driver](http://chromedriver.chromium.org/downloads) in order to simulate a browser environment to fetch the needed documents from the [ET](http://et.gr). You can provide the `chromedriver` executable using the `--chromedriver` argument at the command line. 
+The script __requires__ the [Chrome Driver](http://chromedriver.chromium.org/downloads) in order to simulate a browser environment to fetch the needed documents from the [ET](http://et.gr). You can provide the `chromedriver` executable using the `--chromedriver` argument at the command line. For an easy-to-install solution visit the [Installation Page](https://github.com/eellak/gsoc2018-3gm/wiki/Installation). 
 
 Usage: 
 
@@ -12,6 +12,7 @@ Usage:
 $ fetcher.py -h
 usage: fetcher.py [-h] -date_from DATE_FROM -date_to DATE_TO -output_dir
                   OUTPUT_DIR [--chromedriver CHROMEDRIVER] [--upload]
+                  [--type TYPE]
 
 This is the fetching tool for downloading Government Gazette Issues from the
 ET. For more information visit
@@ -30,11 +31,12 @@ optional arguments:
   --chromedriver CHROMEDRIVER
                         Chrome driver executable
   --upload              Upload to database
+  --type TYPE           Government Gazette document type (Teychos)
 ```
 You need to provide the tool with the start and end date in DD.MM.YYYY format and the output directory of the documents. For example: 
 
-```
-fetcher.py -date_from 17.06.2018 -date_to 19.06.2018 -output_dir ./issues --chromedriver /usr/lib/chromium-browser/chromedriver
+```bash
+python3 fetcher.py -date_from 17.06.2018 -date_to 19.06.2018 -output_dir ./issues --chromedriver /usr/lib/chromium-browser/chromedriver
 ```
 
 ## Scheduling Document Fetching 
@@ -72,9 +74,7 @@ CMD     Command     Any command to be executed.
 The daemon may need restart. For Debian-based systems:
 ```bash
 sudo service crond restart
-``` 
-
-If you want to upload the newly fetched files to the database use the `--upload` flag.
+```
 
 
 
