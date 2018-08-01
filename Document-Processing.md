@@ -78,26 +78,8 @@ Example (with `nohup`):
 nohup python3 converter.py -input_dir ../data/1998/ -output_dir ../data/1998/ -pdf2txt pdf2txt.py &
 ```
 
-# Datasets 
-
-There are two datasets on this repository containing Government Gazette Issues in plain text format.
-Due to continuous integration issues, these datasets are kept in a separate branch with Git LFS. 
-
-1. Dataset from years 2000 - 2018 under `data/dataset.zip`
-
-2. Dataset from years 1976 - 1999 (legacy) under `data/dataset_legacy.zip`
-
-To get them simply checkout and pull the `datasets` branch via 
-
-```
-git checkout -b datasets
-git pull origin datasets 
-```
-
-You can also download *scraped PDFs in txt format* from [here](https://pithos.okeanos.grnet.gr/public/7Z2GQvF0boDbCjYWFnmyc)
-
 # Document Parsing Modules
 
 The parsing modules provides is `IssueParser` for parsing Government Gazette Issues and `LawParser` for parsing laws referred in Government Gazette Issues. You can read the docs [here](https://github.com/eellak/gsoc2018-3gm/tree/master/docs).
- 
+
 
