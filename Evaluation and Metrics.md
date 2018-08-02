@@ -30,3 +30,25 @@ For the overall Detection / Querying Accuracy we take the mean of the individual
 
 
 
+## Algorithm Evaluation
+
+We followed a **hybrid approach** [on detecting amendments](https://github.com/eellak/gsoc2018-3gm/wiki/Algorithms-for-analyzing-Government-Gazette-Documents). This technique yielded mean detection accuracy of 85% and mean querying accuracy of 70%. The cascaded systems mean accuracy was  57%. 
+
+### Improvements
+
+The following improvements can be done in order to increase the accuracies:
+
+**Detection:**
+
+1. Add more parts-of-legal-text such as υποπαράγραφος and στοιχείο.
+   **Difficulty:** Easy.
+   **Workaround**: Read more texts
+2. Train custom dependency analyzer. 
+   **Difficulty**: Hard
+   **Workaround**: Research
+
+**Querying**
+
+1. Clean up Government Gazette Texts
+   **Dificulty**: Medium
+   **Workaround**: Read more texts

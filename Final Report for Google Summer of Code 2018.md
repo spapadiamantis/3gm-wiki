@@ -4,7 +4,7 @@ This is a final report of the work which was done as part of *Government Gazette
 
 ## Abstract
 
-This project aims to provide with the most recent versions of each law, i.e. an automated [**codex**](https://en.wikipedia.org/wiki/Codification_(law)) via _Natural Language Processing (NLP)_ methods and practices on **Greek Legislation**, along with additional functionality such as topic modeling for similarity analysis, versioning system in MongoDB, continuous integration tools & scripts and a [web application](http://3gm.papachristoumarios.me). 
+This project aims to provide with the most recent versions of each law, i.e. an automated [**codex**](https://en.wikipedia.org/wiki/Codification_(law)) via _Natural Language Processing (NLP)_ methods and practices on **Greek Legislation**, along with additional functionality such as topic modeling for similarity analysis, versioning system in MongoDB, continuous integration tools & scripts and a [web application](http://3gm.papachristoumarios.me). The **accuracy** of detecting amendments on Greek Legislation texts was 85%.  
 
 A more detailed explanation of the project is located at [the Wiki Home Page](https://github.com/eellak/gsoc2018-3gm/wiki).
 
@@ -31,6 +31,3 @@ The project is hosted at [3gm.ellak.gr](https://3gm.ellak.gr)
 ## Future Work
 
 Some recommendations for future work can be found [here](https://github.com/eellak/gsoc2018-3gm/wiki/Contributing-To-The-Project) along with any issues that emerge during development. 
-
-
-
