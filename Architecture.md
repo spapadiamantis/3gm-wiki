@@ -55,6 +55,31 @@ The pipelined process of codification consists of the following parts:
 3. Statistical Analysis (optional stage): Statistical Analysis tasks such as Topic Models with LDA or PageRank are applied in order to extract useful information from the statutes and provide with more functionality such as rank-based search, similarity analysis etc. 
 4. Codification Procedure: As outlined above, the codification procedure combines the statutes with their **modifying** links to create the versioning history of the statutes. 
 
+## Source Code
+
+### Core Modules
+
+| Module            | Functionality                                                |
+| ----------------- | ------------------------------------------------------------ |
+| `pparser.py`      | Parsing documents, Creating Issues and Statute Objects       |
+| `syntax.py`       | Module for amendment detection                               |
+| `codifier.py`     | Module for cross-linking & codification                      |
+| `app.py`          | Flask web application                                        |
+| `topic_models.py` | Topic Modeling                                               |
+| `tokenizer.py`    | Tokenization Module (capable of splitting sentences correctly, removing subordinate conjunctions etc.) |
+| `entities.py`     | Contains entities in forms of regular expressions, Greek numbers etc. |
+| `helpers.py`      | Helper functions                                             |
+| `tests.py`        | Unit tests                                                   |
+| `database.py`     | Database Wrapper and Versioning                              |
+| `apply_links.py`  | Apply all amendments and generate history                    |
+
+### Tools
+
+| Tool                    | Functionality             |
+| ----------------------- | ------------------------- |
+| `tools/law_codifier.py` | CLI Tool for codification |
+| `tools/exporter.py`     | Exporting Module          |
+
 
 
 ## References
