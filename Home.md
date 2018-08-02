@@ -1,10 +1,41 @@
-## Problem Statement
+# Table of Contents
+
+- **Getting started**
+  - [Home](https://github.com/eellak/gsoc2018-3gm/wiki)
+  - [Installation](https://github.com/eellak/gsoc2018-3gm/wiki/Installation)
+  - [Operation](https://github.com/eellak/gsoc2018-3gm/wiki/Operation)
+  - [Codifier](https://github.com/eellak/gsoc2018-3gm/wiki/Codifier)
+  - [Architecture](https://github.com/eellak/gsoc2018-3gm/wiki/Architecture)
+  - [Final Progress Report](https://github.com/eellak/gsoc2018-3gm/wiki/Final-Report-for-Google-Summer-of-Code-2018)
+- **Algorithms**
+  - [Amendment Detection](https://github.com/eellak/gsoc2018-3gm/wiki/Algorithms-for-analyzing-Government-Gazette-Documents)
+  - [Topic Modeling](https://github.com/eellak/gsoc2018-3gm/wiki/Topic-Modelling)
+  - [Ranking](https://github.com/eellak/gsoc2018-3gm/wiki/Ranking-Laws-using-PageRank)
+  - [Evaluation and Metrics](https://github.com/eellak/gsoc2018-3gm/wiki/Evaluation-and-Metrics)
+- **Datasets and Continuous Integration**
+  - [Fetching Documents](https://github.com/eellak/gsoc2018-3gm/wiki/Fetching-Documents)
+  - [Processing Documents](https://github.com/eellak/gsoc2018-3gm/wiki/Document-Processing)
+- **Documentation**
+  - [API Documentation](https://github.com/eellak/gsoc2018-3gm/wiki/API-Documentation)
+  - [RESTful API](https://github.com/eellak/gsoc2018-3gm/wiki/RESTful-API)
+  - Help (for web application)
+    - [English](https://github.com/eellak/gsoc2018-3gm/wiki/Help-(in-English))
+    - [Greek](https://github.com/eellak/gsoc2018-3gm/wiki/Help-(in-Greek))
+- **Development**
+  - [Testing](https://github.com/eellak/gsoc2018-3gm/wiki/Testing)
+  - [Licensing](https://github.com/eellak/gsoc2018-3gm/wiki/Licensing)
+  - [Future Work & Contributing](https://github.com/eellak/gsoc2018-3gm/wiki/Contributing-To-The-Project)
+  - [Document Embeddings](https://github.com/eellak/gsoc2018-3gm/wiki/Document-Embeddings-with-Doc2Vec)
+
+---
+
+## Initial Problem Statement
 
 In the recent years plenty of attention has been gathering around analyzing public sector texts via text mining methods enabled by modern libraries, algorithms and practices and bought to to the forefront by open source projects such as textblob, spaCy, SciPy, Tensorflow and NLTK. These collaborative productive efforts seem to be a shift towards more efficient understanding of natural language by machines which can be used in conjunction with public documents in order to provide a more robust organization and codification in the legal sector.  
 
 This proposal  aims to extend the existing Government Gazette (GG) text mining code by implementing features in order to organize and (cross)-link GG texts with legal texts and detect the signatories via heuristic and machine learning methods. This will enable elimination of bureaucratic processes and huge time savings for jurists who for example seek legal documents in legal databases.
 
-## Project Proposal
+## Initial Project Proposal
 
 For this purpose, the GG documents have to be downloaded as PDFs and parse them to raw text files. Heuristic rules and Named Entity Recognition methodologies have to be applied in order to detect competent ministers and references to other legal texts which will be converted into hypertext format.
 
