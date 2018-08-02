@@ -34,7 +34,7 @@ The building and deployment procedure is done via GNU Make in a provided Makefil
 
 </p>
 
-The documents are being parsed by the parser and the parser objects / issue object are generated. After that, the issues are scanned using regular expressions for new statutes. The new statutes are placed on different objects (statute objects). Then the main object (the codifier) is responsible for cross-linking the existing issues together. Then the links and the statutes are passed to the amendment detection algorithm and the new versions are generated. The statutes and links are kept in a document-based database schema  (MongoDB) via serialization. The versioning system which consists of large documents is kept in GridFS. Finally there are options for checkout and rollback on existing statutes and links. 
+The documents are being parsed by the parser and the [parser objects / issue](https://github.com/eellak/gsoc2018-3gm/blob/master/3gm/pparser.py) object are generated. After that, the issues are scanned using regular expressions for new statutes. The new statutes are placed on different [objects (statute objects)](https://github.com/eellak/gsoc2018-3gm/blob/master/3gm/pparser.py). Then the [main object (the codifier)](https://github.com/eellak/gsoc2018-3gm/blob/master/3gm/codifier.py) is responsible for cross-linking the existing issues together. Then the links and the statutes are passed to [the amendment detection algorithm](https://github.com/eellak/gsoc2018-3gm/blob/master/3gm/syntax.py) and the new versions are generated. The statutes and links are kept in a document-based database schema  (MongoDB) via serialization. The [versioning system](https://github.com/eellak/gsoc2018-3gm/blob/master/3gm/database.py) which consists of large documents is kept in GridFS. Finally there are options for checkout and rollback on existing statutes and links. 
 
 ### Pipeline
 
@@ -53,7 +53,7 @@ The pipelined process of codification consists of the following parts:
 1. Gather Statutes: The statutes are gathered and the objects are generated
 2. Cross-link Statutes: The statutes are cross-linked
 3. Statistical Analysis (optional stage): Statistical Analysis tasks such as Topic Models with LDA or PageRank are applied in order to extract useful information from the statutes and provide with more functionality such as rank-based search, similarity analysis etc. 
-4.  Codification Procedure: As outlined above, the codification procedure combines the statutes with their **modifying** links to create the versioning history of the statutes. 
+4. Codification Procedure: As outlined above, the codification procedure combines the statutes with their **modifying** links to create the versioning history of the statutes. 
 
 
 
