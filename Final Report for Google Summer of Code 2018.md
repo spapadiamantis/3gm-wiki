@@ -1,6 +1,6 @@
 # Final Report for Google Summer of Code 2018 
 
-This is a final report of the work which was done as part of *Government Gazette text mining, cross linking, and codification Project* (or 3gm for short) using [Natural Language Processing Methods](https://en.wikipedia.org/wiki/Natural_language_processing) and Practices hosted in [github.com/eellak/gsoc2018-3gm](https://github.com/eellak/gsoc2018-3gm) and [3gm.papachristoumarios.me](http://3gm.papachristoumarios.me/).
+This is a final report of the work which was done as part of *Government Gazette text mining, cross linking, and codification Project* (or 3gm for short) using [Natural Language Processing Methods](https://en.wikipedia.org/wiki/Natural_language_processing) and Practices hosted in [github.com/eellak/gsoc2018-3gm](https://github.com/eellak/gsoc2018-3gm) and [3gm.ellak.gr](https://3gm.ellak.gr).
 
 ## Abstract
 
@@ -8,7 +8,7 @@ This project aims to provide with the most recent versions of each law, i.e. an 
 
 A more detailed explanation of the project is located at [the Wiki Home Page](https://github.com/eellak/gsoc2018-3gm/wiki).
 
-To read more about the project, please visit [the project repository](https://github.com/eellak/gsoc2018-3gm) or the [demonstration page](http://3gm.papachristoumarios.me/) 
+To read more about the project, please visit [the project repository](https://github.com/eellak/gsoc2018-3gm) or the [demonstration page](https://3gm.papachristoumarios.me/) 
 
 An extensive documentation is provided at [the README](https://github.com/eellak/gsoc2018-3gm/blob/master/README.md) and the [project wiki](https://github.com/eellak/gsoc2018-3gm/wiki).
 
@@ -26,7 +26,7 @@ Throughout the project, I kept weekly project progress report logs, which can be
 
 ## Demo
 
-The project is hosted at [3gm.papachristoumarios.me](http://3gm.papachristoumarios.me).
+The project is hosted at [3gm.ellak.gr](https://3gm.ellak.gr)
 
 ## Future Work
 
