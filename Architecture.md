@@ -57,14 +57,6 @@ The pipelined process of codification consists of the following parts:
 
 ## Source Code
 
-<style>
-
-table { width: 100%;
-
-}
-
-</style>
-
 ### Core Modules
 
 | Module            | Functionality                                                |
