@@ -32,7 +32,7 @@ For the overall Detection / Querying Accuracy we take the mean of the individual
 
 ## Algorithm Evaluation
 
-We followed a **hybrid approach** [on detecting amendments](https://github.com/eellak/gsoc2018-3gm/wiki/Algorithms-for-analyzing-Government-Gazette-Documents). This technique yielded mean detection accuracy of 85% and mean querying accuracy of 70%. The cascaded systems mean accuracy was  57%. 
+We followed a **hybrid approach** [on detecting amendments](https://github.com/eellak/gsoc2018-3gm/wiki/Algorithms-for-analyzing-Government-Gazette-Documents). This technique yielded mean detection accuracy of 89% and mean querying accuracy of 70%. The cascaded systems mean accuracy was  62%. 
 
 ### Improvements
 
