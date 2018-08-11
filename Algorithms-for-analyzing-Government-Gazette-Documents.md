@@ -218,13 +218,17 @@ The accuracy of detection reaches 89%
 
 There are places in the text where the mass deletion of statutes (or parts of them) are referred in order to be deleted. These varied significantly from the others so they were kept in a different category. The types of links associated with them are **απαλειπτικός** (i.e. deleting). These areas are signified with the title **Καταργούμενες Διατάξεις**. An example of this is:
 
->  Τα άρθρα 7, 8 και 9, 14 έως και 28, 31, 32 του ν. 1234/2018
+>  Τα άρθρα 7, 8 και 9, 14 έως και 28, 31, 32 του ν. 1234/2018, εκτός από την παράγραφο 13
 
 
 
 ### Step 1: Split regions of interest
 
-The ROIs are split using regular expressions. 
+The ROIs are split using regular expressions. For our example this corresponds to:
+
+> Τα άρθρα 7, 8 και 9, 14 έως και 28, 31, 32 του ν. 1234/2018, 
+>
+> εκτός από την παράγραφο 13
 
 
 
@@ -236,13 +240,42 @@ Same procedure as Step 2.3 above.
 
 ### Step 3: Detect child nodes and break them apart using formal grammars
 
-After detecting the dependencies, we shall proceed detecting the child node. For this purpose we devised a formal grammar. Its description in Extended Backus-Naur Form (EBNF) follows:
+After detecting the dependencies, we shall proceed detecting the child node. For this purpose we devised a formal grammar. We consider the following cases:
 
-<pre>
+```
+SSConj = Token | Token, SSConj | Token "και" Token
+```
 
-<strong>Token</strong> = 
+which results in the list of tokens.
 
-</pre>
+Or:
 
+```
+SSConjRange = Start Range End
+Range = "έως" | "έως και"
+Start, End = Token
+```
 
+which corresponds to a `[Start, End]` range. 
 
+In our case, the resulting list is:
+
+For the first sentence:
+
+```
+[7, 8, 9, 10, 11, 12, 14, 28, 31, 32]
+```
+
+And for the second one:
+
+```
+[13]
+```
+
+We finally construct **a set** that has all the removals minus the exceptions:
+
+```
+[7, 8, 9, 10, 11, 12, 14, 28, 31, 32]
+```
+
+And split the tree into multiple lists (in our case 10). The result will be 10 queries applied to the statutes.
