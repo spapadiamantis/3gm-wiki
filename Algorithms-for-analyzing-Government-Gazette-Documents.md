@@ -238,11 +238,11 @@ Same procedure as Step 2.3 above.
 
 After detecting the dependencies, we shall proceed detecting the child node. For this purpose we devised a formal grammar. Its description in Extended Backus-Naur Form (EBNF) follows:
 
- ```
-**Token** ::= Greek_Letter 
- ```
+<pre>
 
+<strong>Token</strong> = 
 
+</pre>
 
 
 
