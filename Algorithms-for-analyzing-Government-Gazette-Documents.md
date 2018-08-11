@@ -15,9 +15,9 @@ The dataset should be split and commands should be extracted from the main bodie
 
 Finally, a sequence of commands is generated, checked and then executed. For instance the above Command would add an article after another article in already merged law. 
 
-## Algorithm
 
 
+## General Algorithm
 
 ### Step 1: Extracting ROIs from text and preprocessing 
 
@@ -110,6 +110,8 @@ trans_lookup = {
 
 ```
 
+#### Step 2.3: Detect remaining dependencies
+
 Iterating into the sentence we detect each dependency (in accusative or in genitive) via a `re.search` on its stem.  After having each dependency detected we proceed in getting the ids of each segment. For this we will use an iterator that yields the ids, written as numbers, full-numbers etc. For example:
 
 ```python
@@ -201,3 +203,46 @@ That is passed to the `LawParser` class, the operation is processed on the `LawP
 #### Testing on real examples
 
 For more examples look at `examples/examples.md` and the `/syntax` route at the web application.
+
+
+
+### Accuracy
+
+The accuracy of detection reaches 89%
+
+
+
+## Detection of deletions
+
+### Description
+
+There are places in the text where the mass deletion of statutes (or parts of them) are referred in order to be deleted. These varied significantly from the others so they were kept in a different category. The types of links associated with them are **απαλειπτικός** (i.e. deleting). These areas are signified with the title **Καταργούμενες Διατάξεις**. An example of this is:
+
+>  Τα άρθρα 7, 8 και 9, 14 έως και 28, 31, 32 του ν. 1234/2018
+
+
+
+### Step 1: Split regions of interest
+
+The ROIs are split using regular expressions. 
+
+
+
+### Step 2: Detect parts/levels using their stems
+
+Same procedure as Step 2.3 above.
+
+
+
+### Step 3: Detect child nodes and break them apart using formal grammars
+
+After detecting the dependencies, we shall proceed detecting the child node. For this purpose we devised a formal grammar. Its description in Extended Backus-Naur Form (EBNF) follows:
+
+ ```
+**Token** ::= Greek_Letter 
+ ```
+
+
+
+
+
