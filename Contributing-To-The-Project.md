@@ -1,4 +1,4 @@
-# Contributing to the protject
+# Contributing to the project
 
 ## Future Work
 
@@ -10,9 +10,13 @@ In order to further improve the accuracy of the amendment detection algorithm, w
 
 In this stage the various versions of the statutes are kept in records in GridFS. In order to minify the chunks created by GridFS we propose the development of differential versioning for keeping track of the history. This can be done via invoking the [`diff`](https://en.wikipedia.org/wiki/Diff) UNIX tool. The goal is to build a tool like `git` (or even migrate completely to git).
 
+### Digitize Older documents (pre-1999)
+
+The pre-1999 (1976-1999) documents of the Greek Government Gazette need OCR in order to be read. There has been an attempt to digitize them using Google Tesseract v4.0 OCR Engine with neat results in the years 1990-1999. For better results, however, either a custom LSTM model (as Google Tesseract utilizes) needs to be trained in order to detect the Greek typographic elements from the Government Gazette Issues or the gathering of documents from another sources needs to be done.  
 
 
-Any further feedback on future improvements and work is always appreciated. 
+
+**Any further feedback on future improvements and work is always appreciated. **
 
 ---
 
