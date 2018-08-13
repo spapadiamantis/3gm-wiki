@@ -77,14 +77,10 @@ The pipelined process of codification consists of the following parts:
 
 ### Tools
 
-| Tool                    | Function                                                     |
-| ----------------------- | ------------------------------------------------------------ |
-| `tools/law_codifier.py` | <p style="width: 100%; margin-right:200px">CLI Tool for codification</p> |
-| `tools/exporter.py`     | <p style="width: 100%: right:0">Exporting Module</p>         |
-
-<table style="width: 100%">   <tr>     <th>Month</th>     <th>Savings</th>   </tr>   <tr>     <td>January</td>     <td>$100</td>   </tr> </table>
-
-
+| Tool                    | Function                  |
+| ----------------------- | ------------------------- |
+| `tools/law_codifier.py` | CLI Tool for codification |
+| `tools/exporter.py`     | Exporting Module          |
 
 ### Architectural Pattern
 
