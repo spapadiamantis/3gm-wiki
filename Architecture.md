@@ -36,6 +36,8 @@ The building and deployment procedure is done via GNU Make in a provided Makefil
 
 The documents are being parsed by the parser and the [parser objects / issue](https://github.com/eellak/gsoc2018-3gm/blob/master/3gm/pparser.py) object are generated. After that, the issues are scanned using regular expressions for new statutes. The new statutes are placed on different [objects (statute objects)](https://github.com/eellak/gsoc2018-3gm/blob/master/3gm/pparser.py). Then the [main object (the codifier)](https://github.com/eellak/gsoc2018-3gm/blob/master/3gm/codifier.py) is responsible for cross-linking the existing issues together. Then the links and the statutes are passed to [the amendment detection algorithm](https://github.com/eellak/gsoc2018-3gm/blob/master/3gm/syntax.py) and the new versions are generated. The statutes and links are kept in a document-based database schema  (MongoDB) via serialization. The [versioning system](https://github.com/eellak/gsoc2018-3gm/blob/master/3gm/database.py) which consists of large documents is kept in GridFS. Finally there are options for checkout and rollback on existing statutes and links. 
 
+
+
 ### Pipeline
 
 The pipelined process of codification consists of the following parts: 
@@ -80,7 +82,15 @@ The pipelined process of codification consists of the following parts:
 | `tools/law_codifier.py` | CLI Tool for codification |
 | `tools/exporter.py`     | Exporting Module          |
 
+### Architectural Pattern
 
+The layers architectural pattern has been widely adopted by the developer community in order to build large software systems. In our project, we have followed the **layering** approach to our architecture due to its _high scalability and ease of maintenance_. The architecture diagram is shown below: 
+
+<p align="center">
+
+<img src="architecture/layers.png">
+
+</p>
 
 ## References
 
