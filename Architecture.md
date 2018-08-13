@@ -77,9 +77,9 @@ The pipelined process of codification consists of the following parts:
 
 ### Tools
 
-| Tool                    | Functionality                                                |
+| Tool                    | Function                                                     |
 | ----------------------- | ------------------------------------------------------------ |
-| `tools/law_codifier.py` | <p style="width: 100%; padding-right:200px">CLI Tool for codification</p> |
+| `tools/law_codifier.py` | <p style="width: 100%; margin-right:200px">CLI Tool for codification</p> |
 | `tools/exporter.py`     | <p style="width: 100%: right:0">Exporting Module</p>         |
 
 ### Architectural Pattern
