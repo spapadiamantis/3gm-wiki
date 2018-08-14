@@ -14,8 +14,6 @@ In this stage the various versions of the statutes are kept in records in GridFS
 
 The pre-1999 (1976-1999) documents of the Greek Government Gazette need OCR in order to be read. There has been an attempt to digitize them using Google Tesseract v4.0 OCR Engine with neat results in the years 1990-1999. For better results, however, either a custom LSTM model (as Google Tesseract utilizes) needs to be trained in order to detect the Greek typographic elements from the Government Gazette Issues or the gathering of documents from another sources needs to be done.  
 
-
-
 **Any further feedback on future improvements and work is always appreciated. **
 
 ---
