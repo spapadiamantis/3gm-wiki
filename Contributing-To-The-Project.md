@@ -1,5 +1,25 @@
 # Contributing to the project
 
+## Workflow For Contributors
+
+If you want to contribute to the project you should know that we are using the standardised [Fork and Pull Request Workflow for GitHub](https://gist.github.com/Chaser324/ce0505fbed06b947d962). So:
+
+1. Fork the project.
+2. Sync with upstream.
+3. Checkout to a new branch referring to your change. For example if you are working on issue #3 you should create a branch called `issue#3`.
+4. Work on the changes and commit them to the branch.
+5. Submit a pull request:
+   1. Make sure that you are not submitting multiple PRs for the same ticket.
+   2. Make sure that the tests pass successfully. We are using Travis CI for running them. 
+   3. Squash multiple commits to one with `git rebase -i`.
+   4. Outline your changes descriptively on the PR text. 
+   5. Wait for the community to review the PR and make the appropriate changes to be ready for merging.
+6. Woah! Now you are a real contributor! 
+
+If you are unaware of these please check [this beautiful resource (in Greek)](http://git-class.gr/).
+
+
+
 ## Future Work
 
 ### Training statistical models with custom tag maps
