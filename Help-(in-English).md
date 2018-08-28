@@ -28,6 +28,14 @@
 
       ![](help/4.png)
 
+8. You can have an overview of the differences between versions (generated with `difflib`)  clicking at the Differences (Διαφορές) button. 
+
+   <p align="center">
+
+   <img src="help/10.png">
+
+   </p> 
+
 
 
 ### About labels
@@ -36,7 +44,7 @@ There are labels in the link area such as this:
 
 This means that:
 
-The link is ** modifying ** ie it amends the act to be considered. Next comes the piece of legislation that amends it.
+The link is **modifying ** ie it amends the act to be considered. Next comes the piece of legislation that amends it.
 
 ![](help/4.png)
 

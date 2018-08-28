@@ -29,6 +29,14 @@
 
       ![](help/4.png)
 
+5. You can have an overview of the differences between versions (generated with `difflib`)  clicking at the Differences (Διαφορές) button. 
+
+<p align="center">
+
+<img src="/home/marios/workspace/gsoc2018-3gm.wiki/help/10.png">
+
+</p>
+
 
 
 ### Σχετικά με τις ετικέτες
