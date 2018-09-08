@@ -29,7 +29,7 @@
 
       ![](help/4.png)
 
-5. You can have an overview of the differences between versions (generated with `difflib`)  clicking at the Differences (Διαφορές) button. 
+5. Μπορείτε να δείτε τις Διαφορές που έχουν επέλθει στο νόμο πατώντας στο σύνδεσμο "Διαφορές" στη σελίδα του ιστορικού. 
 
 <p align="center">
 
