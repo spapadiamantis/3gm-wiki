@@ -5,6 +5,7 @@
   * [Codifier](https://github.com/eellak/gsoc2018-3gm/wiki/Codifier)
   * [Architecture](https://github.com/eellak/gsoc2018-3gm/wiki/Architecture)
   * [Final Progress Report](https://github.com/eellak/gsoc2018-3gm/wiki/Final-Report-for-Google-Summer-of-Code-2018)
+  * [Reading List](https://github.com/eellak/gsoc2018-3gm/wiki/Reading-List)
 * **Algorithms**
   * [Amendment Detection](https://github.com/eellak/gsoc2018-3gm/wiki/Algorithms-for-analyzing-Government-Gazette-Documents)
   * [Topic Modeling](https://github.com/eellak/gsoc2018-3gm/wiki/Topic-Modelling)
