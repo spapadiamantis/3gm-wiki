@@ -5,3 +5,4 @@
 3. Vaswani, Ashish, et al. "Attention is all you need." Advances in Neural Information Processing Systems. 2017.
 4. Devlin, Jacob, et al. "Bert: Pre-training of deep bidirectional transformers for language understanding." arXiv preprint arXiv:1810.04805 (2018).
 5. [Standford Center for Legal Informatics Papers](https://law.stanford.edu/codex-the-stanford-center-for-legal-informatics/codex-publications/#slsnav-seminal-papers)
+6. [United States Code](https://en.wikipedia.org/wiki/United_States_Code) 
