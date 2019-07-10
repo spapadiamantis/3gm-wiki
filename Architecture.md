@@ -8,7 +8,7 @@ The technologies being used in the project are Python 3.x with an NLP toolkit an
 
  ### Web Application
 
-The web application that is hosted at [3gm.papachristoumarios.me](https://3gm.papachristoumarios.me) is developed using the Flask Web Micro-framework. The web application also comes with a RESTful API via which the information is accessible to via requests. 
+The web application that is hosted at [3gm.ellak.gr](https://3gm.ellak.gr/home) is developed using the Nodejs framework and Angular. The web application also comes with a RESTful API via which the information is accessible to via requests. 
 
 <p align="center">
 
