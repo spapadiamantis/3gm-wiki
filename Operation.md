@@ -78,11 +78,13 @@ versions: Array
 1. [Apply Topic Models on Government Gazette Issues](https://github.com/eellak/gsoc2018-3gm/wiki/Topic-Modelling)
 2. [Document Embeddings with Doc2Vec](https://github.com/eellak/gsoc2018-3gm/wiki/Doc2Vec)
 
-## Step 5: Deploying Flask Application
+## Step 5: Deploying the Angular Application
 
-1. Navigate to `3gm/`
-2. Run `./run.sh` to deploy the Flask application.
-3. Navigate to `localhost:<port>` where the application is deployed. 
+1. Navigate to `angularui/`
+2. Run `npm install` to install project dependencies.
+3. Run `ng build` to compile the project.
+4. Run `ng serve` to serve the project.
+5. Navigate to `localhost:4200` where the application is deployed. 
 
 ## Deploying on a virtual machine
 
