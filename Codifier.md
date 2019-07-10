@@ -86,13 +86,10 @@ import codifier
 codifier.codifier = codifier.build(start=1998, end=2018, data_dir='data/') 
 ```
 
-# Use via the flask application
+# Use via the Angular application
 
 1. Setup the database 
-2. Deploy the flask application (inside `3gm` directory) via:
-```bash
-./run.sh
-```
+2. Deploy the application (inside `angularui` directory)
 
 
 
