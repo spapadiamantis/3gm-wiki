@@ -76,6 +76,386 @@ The daemon may need restart. For Debian-based systems:
 sudo service crond restart
 ```
 
+## A Simple Guide to mining the Greek Government Gazette
+
+A great part of the GSOC-2019 project involved working with great amounts of data from the [ET](http://et.gr) website. In this segment we would like to document the process of data-mining the website and then explain how we can use the scripts included in the project code to efficiently download large corpora of GGG issues. Note that this project concerned  GGG issues published strictly after the “Metapoliteusi”(the reinstitution of the current Hellenic republic) and therefore concerns publications after 1976 exclusively.
+
+The only way to batch download issues of the GGG is through he ET website using the page “Anazitiseis FEK”. In order to use the module we have to specify the “year” of the issue’s publication and subsequently the type of issue we would like to download. There are a number of current and discontinued issues we can download and these include:
 
 
+<table>
+  <tr>
+   <td>Issue name
+   </td>
+   <td>Currently used
+   </td>
+   <td>Contents
+   </td>
+  </tr>
+  <tr>
+   <td><strong>ΠΡΩΤΟ (Α)</strong>
+   </td>
+   <td>Yes
+   </td>
+   <td>Laws, amendments, presidential decrees
+   </td>
+  </tr>
+  <tr>
+   <td><strong> ΔΕΥΤΕΡΟ (Β)</strong>
+   </td>
+   <td>Yes
+   </td>
+   <td>Mainly administrative decisions
+   </td>
+  </tr>
+  <tr>
+   <td><strong> ΤΡΙΤΟ (Γ)</strong> 
+   </td>
+   <td>Yes
+   </td>
+   <td>Mainly public position offers and appointments
+   </td>
+  </tr>
+  <tr>
+   <td><strong> ΤΕΤΑΡΤΟ (Δ) </strong>
+   </td>
+   <td>Yes
+   </td>
+   <td>Mainly acts concerning public property
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Ανωτάτου Ειδικού Δικαστηρίου (Α.ΕΙ.Δ)</strong>
+   </td>
+   <td>Yes
+   </td>
+   <td>Decrees of the Supreme Special Court
+   </td>
+  </tr>
+  <tr>
+   <td><strong> Προκηρύξεων Ανωτάτου Συμβουλίου Επιλογής Προσωπικού (Α.Σ.Ε.Π.)</strong>
+   </td>
+   <td>Yes
+   </td>
+   <td>Decrees on personnel hirings in the public sector
+   </td>
+  </tr>
+  <tr>
+   <td><strong>(ΠΡΑ.Δ.Ι.Τ.) </strong>
+   </td>
+   <td>Yes
+   </td>
+   <td>Figures of private and public orgs
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Διακηρύξεων Δημοσίων Συμβάσεων (Δ.Δ.Σ.)</strong>
+   </td>
+   <td>Yes
+   </td>
+   <td>Summaries of “Declarations of Public  Contracts”
+   </td>
+  </tr>
+  <tr>
+   <td><strong>(Υ.Ο.Δ.Δ.)</strong>
+   </td>
+   <td>Yes
+   </td>
+   <td>Mainly decrees concerning directors and administrative personnel of public organisations
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Αναγκαστικών Απαλλοτριώσεων και Πολεοδομικών Θεμάτων (Α.Α.Π.)</strong>
+   </td>
+   <td>Yes
+   </td>
+   <td>Expropriations and urban planning
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Νομικών Προσώπων Δημοσίου Δικαίου (Ν.Π.Δ.Δ.)</strong> 
+   </td>
+   <td>NO
+   </td>
+   <td>Personal decrees and appointments concerning
+<p>
+<strong>Ν.Π.Δ.Δ.s</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong> Αναπτυξιακών Πράξεων και Συμβάσεων (Α.Π.Σ.)</strong>
+   </td>
+   <td>No
+   </td>
+   <td>Economic development decrees and contracts
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Παράρτημα</strong>
+   </td>
+   <td>No
+   </td>
+   <td>Various tables 
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Εμπορικής και Βιομηχανικής Ιδιοκτησίας</strong> (Ε.Β.Ι.)
+   </td>
+   <td>No
+   </td>
+   <td>
+   </td>
+  </tr>
+</table>
+<table>
+  <tr>
+   <td>Issue name
+   </td>
+   <td>Currently used
+   </td>
+   <td>Contents
+   </td>
+  </tr>
+  <tr>
+   <td><strong>ΠΡΩΤΟ (Α)</strong>
+   </td>
+   <td>Yes
+   </td>
+   <td>Laws, amendments, presidential decrees
+   </td>
+  </tr>
+  <tr>
+   <td><strong> ΔΕΥΤΕΡΟ (Β)</strong>
+   </td>
+   <td>Yes
+   </td>
+   <td>Mainly administrative decisions
+   </td>
+  </tr>
+  <tr>
+   <td><strong> ΤΡΙΤΟ (Γ)</strong> 
+   </td>
+   <td>Yes
+   </td>
+   <td>Mainly public position offers and appointments
+   </td>
+  </tr>
+  <tr>
+   <td><strong> ΤΕΤΑΡΤΟ (Δ) </strong>
+   </td>
+   <td>Yes
+   </td>
+   <td>Mainly acts concerning public property
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Ανωτάτου Ειδικού Δικαστηρίου (Α.ΕΙ.Δ)</strong>
+   </td>
+   <td>Yes
+   </td>
+   <td>Decrees of the Supreme Special Court
+   </td>
+  </tr>
+  <tr>
+   <td><strong> Προκηρύξεων Ανωτάτου Συμβουλίου Επιλογής Προσωπικού (Α.Σ.Ε.Π.)</strong>
+   </td>
+   <td>Yes
+   </td>
+   <td>Decrees on personnel hirings in the public sector
+   </td>
+  </tr>
+  <tr>
+   <td><strong>(ΠΡΑ.Δ.Ι.Τ.) </strong>
+   </td>
+   <td>Yes
+   </td>
+   <td>Figures of private and public orgs
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Διακηρύξεων Δημοσίων Συμβάσεων (Δ.Δ.Σ.)</strong>
+   </td>
+   <td>Yes
+   </td>
+   <td>Summaries of “Declarations of Public  Contracts”
+   </td>
+  </tr>
+  <tr>
+   <td><strong>(Υ.Ο.Δ.Δ.)</strong>
+   </td>
+   <td>Yes
+   </td>
+   <td>Mainly decrees concerning directors and administrative personnel of public organisations
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Αναγκαστικών Απαλλοτριώσεων και Πολεοδομικών Θεμάτων (Α.Α.Π.)</strong>
+   </td>
+   <td>Yes
+   </td>
+   <td>Expropriations and urban planning
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Νομικών Προσώπων Δημοσίου Δικαίου (Ν.Π.Δ.Δ.)</strong> 
+   </td>
+   <td>NO
+   </td>
+   <td>Personal decrees and appointments concerning
+<p>
+<strong>Ν.Π.Δ.Δ.s</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong> Αναπτυξιακών Πράξεων και Συμβάσεων (Α.Π.Σ.)</strong>
+   </td>
+   <td>No
+   </td>
+   <td>Economic development decrees and contracts
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Παράρτημα</strong>
+   </td>
+   <td>No
+   </td>
+   <td>Various tables 
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Εμπορικής και Βιομηχανικής Ιδιοκτησίας</strong> (Ε.Β.Ι.)
+   </td>
+   <td>No
+   </td>
+   <td>
+   </td>
+  </tr>
+</table>
 
+
+Unfortunately there are no statistics or figures concerning  the number of issues published per type and year and information concerning issuesthemselves is somewhat restricted. In this guide we provide some simple statistics that can save time for a dataminer.
+
+
+<table>
+  <tr>
+   <td>Issue abbreviation
+   </td>
+   <td>Year of start
+   </td>
+   <td>Year of end
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Α’</strong>
+   </td>
+   <td>1976
+   </td>
+   <td>2019
+   </td>
+  </tr>
+  <tr>
+   <td><strong> Β’</strong>
+   </td>
+   <td>1976
+   </td>
+   <td>2019
+   </td>
+  </tr>
+  <tr>
+   <td><strong> Γ’</strong> 
+   </td>
+   <td>1983
+   </td>
+   <td>2019
+   </td>
+  </tr>
+  <tr>
+   <td><strong> Δ’ </strong>
+   </td>
+   <td>1976
+   </td>
+   <td>2019
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Α.ΕΙ.Δ</strong>
+   </td>
+   <td>2000
+   </td>
+   <td>2019
+   </td>
+  </tr>
+  <tr>
+   <td><strong> Α.Σ.Ε.Π.</strong>
+   </td>
+   <td>2000
+   </td>
+   <td>2019
+   </td>
+  </tr>
+  <tr>
+   <td><strong>ΠΡΑ.Δ.Ι.Τ.</strong>
+   </td>
+   <td>2016
+   </td>
+   <td>2019
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Δ.Δ.Σ.</strong>
+   </td>
+   <td>2000
+   </td>
+   <td>2019
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Υ.Ο.Δ.Δ.</strong>
+   </td>
+   <td>2006
+   </td>
+   <td>2019
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Α.Α.Π.</strong>
+   </td>
+   <td>2016
+   </td>
+   <td>2019
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Παράρτημα</strong>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+</table>
+
+
+The ET website has put a cap on how many requests it can service and that means we have to regulate our queries in order to avoid HTTP:503 errors. A way to do this is  by using cron or adding sleep commands between queries in bash. Furthermore ET can only present up to 200 issues per query  which makes batch downloading somewhat tricky. To make things easier I created a variation of the fetching script form 2018 that permits searching by issue number as opposed to issue date. This script  can be fairly easily used in bash to mine the website.
+
+For example let’s say we  want to mine all type D issues from year 1984. We can navigate to the respective page on ET and query for this issue. We see that there are slightly more than 800 results. We can then write a very simple bash script to mine all these issues. This example can be found in the scripts directory.
+
+```
+#!/bin/bash
+
+for (( i=1; i<=1000; i=i+200 ))
+
+do
+
+end=$(($i+199))
+
+python3 fetch_by_issue.py -issue_from $i -issue_to $end -year 1984 -output_dir ./issues \
+
+--chromedriver chromedriver --type  Δ
+
+sleep 5
+
+done
+
+```
