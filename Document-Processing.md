@@ -83,3 +83,6 @@ nohup python3 converter.py -input_dir ../data/1998/ -output_dir ../data/1998/ -p
 The parsing modules provides is `IssueParser` for parsing Government Gazette Issues and `LawParser` for parsing laws referred in Government Gazette Issues. You can read the docs [here](https://github.com/eellak/gsoc2018-3gm/tree/master/docs).
 
 
+# Fact Extraction
+
+As part of GSOC-2019 we tried to enhance the the NLP capabilities of the project. To adress this we trained a new NER model using spaCy and added new fact extraaction alorithms using regular expressions
