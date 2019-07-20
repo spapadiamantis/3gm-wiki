@@ -17,3 +17,10 @@ Since we couldn’t redetermine entity labels we tried to apply this scheme to t
 *PRODUCTS for actual products but also for any product of the praxis of an organisation or a GPE, meaning also pacts, agreements, programs, guidelines or systems.
 *EVENT for events such as "Αργία"
 
+
+## Building Named Entities from the `codifier`
+
+The `entity_recogniser.py` module populates everything from the database. Invoking it using
+```
+python3 entity_recogniser.py
+```
