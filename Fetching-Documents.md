@@ -75,6 +75,9 @@ The daemon may need restart. For Debian-based systems:
 ```bash
 sudo service crond restart
 ```
+## Internet Archive collection
+
+To make Greek Government Gazette issues more accessible we have created a [collection](https://archive.org/details/greekgovernmentgazette?tab=collection) on the Internet Archive that currently contains around 130,000 issues of various issue types, spaning from 1976 to 2019. You can access it, perform queries and download issues using the [Internet Archive API for python](https://archive.org/services/docs/api/internetarchive/).
 
 ## A Simple Guide to mining the Greek Government Gazette
 
