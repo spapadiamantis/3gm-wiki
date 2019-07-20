@@ -8,6 +8,7 @@
   * [Reading List](https://github.com/eellak/gsoc2018-3gm/wiki/Reading-List)
 * **Algorithms**
   * [Amendment Detection](https://github.com/eellak/gsoc2018-3gm/wiki/Algorithms-for-analyzing-Government-Gazette-Documents)
+  * [Named Entity Recognision](https://github.com/ellak/gsoc2018-3gm/wiki/Named-Entity-Recognision)
   * [Topic Modeling](https://github.com/eellak/gsoc2018-3gm/wiki/Topic-Modelling)
   * [Ranking](https://github.com/eellak/gsoc2018-3gm/wiki/Ranking-Laws-using-PageRank)
   * [Evaluation and Metrics](https://github.com/eellak/gsoc2018-3gm/wiki/Evaluation-and-Metrics)
