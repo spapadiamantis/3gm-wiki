@@ -18,9 +18,6 @@
 * **Documentation**
   * [API Documentation](https://github.com/eellak/gsoc2018-3gm/wiki/API-Documentation)
   * [RESTful API](https://github.com/eellak/gsoc2018-3gm/wiki/RESTful-API)
-  * Help (for web application)
-    * [English](https://github.com/eellak/gsoc2018-3gm/wiki/Help-(in-English))
-    * [Greek](https://github.com/eellak/gsoc2018-3gm/wiki/Help-(in-Greek))
 * **Development**
   * [Testing](https://github.com/eellak/gsoc2018-3gm/wiki/Testing)
   * [Licensing](https://github.com/eellak/gsoc2018-3gm/wiki/Licensing)
