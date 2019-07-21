@@ -24,3 +24,16 @@ The `entity_recogniser.py` module populates everything from the database. Invoki
 ```
 python3 entity_recogniser.py
 ```
+would build named entities for your codifier corpus. Then it builds the topics collection to the MongoDB database. Named entities are build in the same way as topic models.
+
+## Using the NER model
+
+As mentioned, our model is a spaCy model and can be accessed through the entity recogniser [class](https://spacy.io/api/entityrecognizer#_title) of spaCy's API. The model can be found in the 'models' directory of the project.
+You can also use visualizers like [displaCy](https://spacy.io/usage/visualizers)
+
+<p align="center">
+
+<img src="ner_example.png">
+
+</p>
+
