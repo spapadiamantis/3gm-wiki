@@ -1,6 +1,6 @@
-# Named Entity Recognision
+# Named Entity Recognition
 
-During GSOC-2019 our main goal was to enhance the NLP capabilities of the program. To this end we decided it is vital to train a Named Entity Recognision (NER) model using solely Greek Government Gazette texts.It is trained using the [Greek spaCy](https://spacy.io/models/el/) pre-trained model and a dataset created with [Prodigy](https://prodi.gy/).
+During GSOC-2019 our main goal was to enhance the NLP capabilities of the program. To this end we decided it is vital to train a Named Entity Recognition (NER) model using solely Greek Government Gazette texts.It is trained using the [Greek spaCy](https://spacy.io/models/el/) pre-trained model and a dataset created with [Prodigy](https://prodi.gy/).
 
 ## NER labels 
 
@@ -24,7 +24,7 @@ The `entity_recogniser.py` module populates everything from the database. Invoki
 ```
 python3 entity_recogniser.py
 ```
-would build named entities for your codifier corpus. Then it builds the topics collection to the MongoDB database. Named entities are build in the same way as topic models.
+would build named entities for your codifier corpus. Then it builds the topics collection to the MongoDB database. Named entities are built in the same way as topic models.
 
 ## Using the NER model
 
