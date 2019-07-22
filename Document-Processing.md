@@ -85,4 +85,17 @@ The parsing modules provides is `IssueParser` for parsing Government Gazette Iss
 
 # Fact Extraction
 
-As part of GSOC-2019 we tried to enhance the the NLP capabilities of the project. To adress this we trained a new NER model using spaCy and added new fact extraaction alorithms using regular expressions
+As part of GSOC-2019 we tried to enhance the the NLP capabilities of the project. To adress this we trained a new NER model, using spaCy information on which, can be found in [this segment](https://github.com/ellak/gsoc2018-3gm/wiki/Named-Entity-Recognision) of the wiki and added new fact extraction alorithms using regular expressions.
+
+Concerning regular expressions we expanded the entities.py file and added several expressions that aim to extract useful information for a wide range of users. The new module can detect monetary and non-monetary amounts, scales conditions, constraints, dates, exact times, durations and various other specific codes and numbers such as:
+
+* URLs, e-mails, phone numbers, IBAN numbers, zip codes
+* CPC and CPV codes
+* IDs and Military IDs
+* Natura regions, Wildlife sanctuaries, NUTS regions
+* EU directives, regulations and decisions
+* Ship tonnage, hull numbers and ship flags
+* ISO and ELOT protocols
+* [OPS](http://www.ops.gr/Ergorama/), [ADA](https://diavgeia.gov.gr/search)s, [AFM](https://ec.europa.eu/taxation_customs/tin/pdf/el/TIN_-_country_sheet_ES_el.pdf), [KAEK](https://www.lex.gr/index.php/el/ti-einai-o-kaek) numbers
+
+
