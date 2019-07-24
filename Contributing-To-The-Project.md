@@ -32,7 +32,12 @@ In this stage the various versions of the statutes are kept in records in GridFS
 
 ### Digitize Older documents (pre-1999)
 
-The pre-1999 (1976-1999) documents of the Greek Government Gazette need OCR in order to be read. There has been an attempt to digitize them using Google Tesseract v4.0 OCR Engine with neat results in the years 1990-1999. For better results, however, either a custom LSTM model (as Google Tesseract utilizes) needs to be trained in order to detect the Greek typographic elements from the Government Gazette Issues or the gathering of documents from another sources needs to be done.  
+The pre-1999 (1976-1999) documents of the Greek Government Gazette need OCR in order to be read. There has been an attempt to digitize them using Google Tesseract v4.0 OCR Engine with neat results in the years 1990-1999. For better results, however, either a custom LSTM model (as Google Tesseract utilizes) needs to be trained in order to detect the Greek typographic elements from the Government Gazette Issues or the gathering of documents from another sources needs to be done.
+
+### Add executive decisions extraction
+
+The codifier module currently detects, codifies and stores all laws and presidential decrees that are found in the Greek Government Gazette issues. Even though these types of amendments are most important in greek legislation they do not account for the largest part of GGG issues. It is therefore vital to expand amendment extraction to other types of amendments such as parliamentary acts and regulations, executive decisions, acts of appointment etc. Expanding extraction to other types of decisions and acts will help us better understand the continuity and interaction between the legislative and executive branches.
+
 
 **Any further feedback on future improvements and work is always appreciated.**
 
