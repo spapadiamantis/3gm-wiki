@@ -93,5 +93,9 @@ model.save('laws_model.bin')
 >>> model.docvecs.most_similar('ν. 4009/2011')
 [('π.δ. 127/2010', 0.29893651604652405), ('π.δ. 58/2015', 0.24261419475078583), ('π.δ. 13/2013', 0.23538821935653687), ('ν. 4001/2011', 0.22230146825313568), ('ν. 4321/2015', 0.19321933388710022), ('ν. 4420/2016', 0.19074279069900513), ('π.δ. 48/1999', 0.18942637741565704), ('π.δ. 148/2010', 0.18506628274917603), ('π.δ. 172/2014', 0.17951558530330658), ('π.δ. 134/2017', 0.17921951413154602)]
 ```
+## GSOC-2019 Doc2vec model
 
+During this year's GSOC we decided to train a doc2vec model on the corpus and include it in the project. This model can be found in the 'models' directory and contains roughly 3000 vectors. We will continue to grow the model in size. 
+
+Any future expansion of the legislation extraction capabilities of the project could also result in a much bigger model containing administrative and parliamentary decisions. You can find more information on how to contribute in the [relevant sention](https://github.com/eellak/gsoc2018-3gm/wiki/Contributing-To-The-Project) of the wiki.
 
