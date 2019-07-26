@@ -36,7 +36,7 @@ The pre-1999 (1976-1999) documents of the Greek Government Gazette need OCR in o
 
 ### Add executive decisions extraction
 
-The codifier module currently detects, codifies and stores all laws and presidential decrees that are found in the Greek Government Gazette issues. Even though these types of amendments are most important in greek legislation they do not account for the largest part of GGG issues. It is therefore vital to expand amendment extraction to other types of amendments such as parliamentary acts and regulations, executive decisions, acts of appointment etc. Expanding extraction to other types of decisions and acts will help us better understand the continuity and interaction between the legislative and executive branches.
+The codifier module currently detects, codifies and stores all laws and presidential decrees that are found in the Greek Government Gazette issues. Even though these types of amendments are most important in greek legislation they do not account for the largest part of GGG issues. It is therefore vital to expand legal entity extraction to other types of rules such as parliamentary acts and regulations, executive decisions, acts of appointment etc. Expanding extraction to other types of decisions and acts will help us understand the continuity and interaction between the legislative and executive branches better. This will also help us codify more GGG issue types since for the time being codification only happens in Issue type A FEKs. 
 
 
 **Any further feedback on future improvements and work is always appreciated.**
@@ -51,7 +51,7 @@ If you are a lawyer, you are very helpful to us. We would like you to tell us:
 
 2. If there are legal texts that are absent
 
-3. If the topic is satisfactory   
+3. If the topic is satisfactory
 
 ## For computer scientists
 
