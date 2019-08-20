@@ -13,7 +13,7 @@ The proposed way of modeling the topics is:
 1. Parse raw texts
 2. Remove punctuation numbers
 3. Filter out words considered "junk" (i.e. really small words)
-4. Lemmatize everything using Greek Lemmatizer provided from this GSoC project [which adds the Greek Language to spaCy](https://github.com/eellak/gsoc2018-spacy) and lookup provided at `resources/greek_lemmas.py`.   
+4. Lemmatize everything using Greek Lemmatizer provided from this GSoC project [which adds the Greek Language to spaCy](https://github.com/eellak/gsoc2018-spacy) and lookup provided at `resources/greek_lemmas.py`.
 5. Run LDA to extract topics (optionally using grid search) to find the best parameters
 6. Gather topics to a graph.
 7. Store to MongoDB collection.
