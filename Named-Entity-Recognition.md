@@ -28,9 +28,23 @@ would build named entities for your codifier corpus. Then it builds the topics c
 
 ## Using the NER model
 
-As mentioned, our model is a spaCy model and can be accessed through the entity recogniser [class](https://spacy.io/api/entityrecognizer#_title) of spaCy's API. The model can be found in the 'models' directory of the project.
-You can also use visualizers like [displaCy](https://spacy.io/usage/visualizers)
+As mentioned, our model is a spaCy model and can be accessed through the entity recogniser [class](https://spacy.io/api/entityrecognizer#_title) of spaCy's API. The model can be found in the 'models' directory of the project. You can also use visualizers like [displaCy](https://spacy.io/usage/visualizers)
 
+For example you can import the module using:
+```
+
+import spacy
+nlp  = spacy.load('3gm_ner_model')
+
+```
+You can then use the model to detect named entities on chuncks of Greek legal text.
+
+```
+text = '''«Διάσπαση του Υπουργείου Εσωτερικών, Αποκέντρωσης και Ηλεκτρονικής Διακυβέρνησης στα Υπουργεία: α) Εσωτερικών και β) Διοικητικής Μεταρρύθμισης και Ηλεκτρονικής Διακυβέρνησης, συγχώνευση των Υπουργείων Οικονομίας, Ανταγωνιστικότητας και Ναυτιλίας και Θαλάσσιων Υποθέσεων, Νήσων και Αλιείας στο Υπουργείο Ανάπτυξης, Ανταγωνιστικότητας και Ναυτιλίας και μεταφορά στον Πρωθυπουργό των Γενικών Γραμματειών Ενημέρωσης και Επικοινωνίας και στο Υπουργείο Παιδείας, Δια Βίου Μάθησης και Θρησκευμάτων της Γενικής Γραμματείας Νέας Γενιάς» (ΦΕΚ Α΄ 147)'''
+doc = nlp(text)
+displacy.serve(doc, style="ent")
+
+```
 <p align="center">
 
 <img src="ner_example.png">
