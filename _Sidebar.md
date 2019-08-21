@@ -14,7 +14,8 @@
   * [Topic Modeling](https://github.com/eellak/gsoc2018-3gm/wiki/Topic-Modelling)
   * [Ranking](https://github.com/eellak/gsoc2018-3gm/wiki/Ranking-Laws-using-PageRank)
   * [Evaluation and Metrics](https://github.com/eellak/gsoc2018-3gm/wiki/Evaluation-and-Metrics)
-  * [Text generation](https://github.com/eellak/gsoc2018-3gm/wiki/Natural-Language-Model)
+  * [Text Generation](https://github.com/eellak/gsoc2018-3gm/wiki/Natural-Language-Model)
+  * [Fact Extraction](https://github.com/eellak/gsoc2018-3gm/wiki/Fact-Extraction)
 * **Datasets and Continuous Integration**
   * [Fetching Documents](https://github.com/eellak/gsoc2018-3gm/wiki/Fetching-Documents)
   * [Processing Documents](https://github.com/eellak/gsoc2018-3gm/wiki/Document-Processing)
