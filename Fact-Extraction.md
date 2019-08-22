@@ -1,8 +1,8 @@
 # Fact Extraction
 
-As part of GSOC-2019 we tried to enhance the the NLP capabilities of the project. To adress this we trained a new NER model, using spaCy information on which, can be found in [this segment](https://github.com/ellak/gsoc2018-3gm/wiki/Named-Entity-Recognision) of the wiki and added new fact extraction alorithms using regular expressions.
+As part of GSOC-2019 we tried to enhance the the NLP capabilities of the project. To address this we trained a new NER model, using spaCy information on which, can be found in [this segment](https://github.com/ellak/gsoc2018-3gm/wiki/Named-Entity-Recognision) of the wiki and added new fact extraction algorithms using regular expressions.
 
-Concerning regular expressions we expanded the entities.py file and added several expressions that aim to extract useful information for a wide range of users. The new module can detect monetary and non-monetary amounts, scales conditions, constraints, dates, exact times, durations and various other specific codes and numbers such as:
+Concerning regular expressions we expanded the entities.py file and added several expressions that aim to extract useful information for a wide range of users. The new module can detect monetary and non-monetary amounts, scales conditions, constraints, dates, exact times, duration and various other specific codes and numbers such as:
 
 * URLs, e-mails, phone numbers, IBAN numbers, zip codes
 * CPC and CPV codes
@@ -26,6 +26,6 @@ You can access these dictionaries through the singleton variable for the codifie
 >>> codifier.codifier.laws[identifier].entities
 ```
 
-Where identifier is the string coresponding to the law. For example 'ν. 4513/2018'.
+Where identifier is the string corresponding to the law. For example 'ν. 4513/2018'.
 
 
