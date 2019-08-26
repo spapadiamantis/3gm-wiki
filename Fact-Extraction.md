@@ -26,6 +26,9 @@ You can access these dictionaries through the singleton variable for the codifie
 >>> codifier.codifier.laws[identifier].entities
 ```
 
-Where identifier is the string corresponding to the law. For example 'ν. 4513/2018'.
+Where identifier is the string corresponding to the law. For example 'π.δ. 84/2019' which can be found [here](https://www.kodiko.gr/nomologia/document_navigation/539871/p.d.-84-2019) returns the following entities:
 
+```
+π.δ. 84/2019 {'Urls': [], 'CPC Codes': [], 'CPV Codes': [], 'IBANs': [], 'E-mails': [(934, ['webmaster.et@et.gr']), (967, ['helpdesk.et@et.gr']), (970, ['webmaster.et@et.gr']), (972, ['grammateia@et.gr'])], 'Id Numbers': [], 'Military Personel': [], 'Natura 2000 Regions': [], 'Scales': [], 'EU Directives': [], 'EU Regulations': [], 'EU Decisions': [], 'Phone Numbers': [(957, [' 210 5279000', ' 210 5279054']), (960, [' 210 5279178']), (961, [' 210 5279000']), (962, [' 210 5279167', ' 210 5279139'])], 'Protocols': [], 'AFM numbers': [], 'NUTS Region Codes': [], 'Exact times': [(963, ['13:30'])], 'Ship Tonnage': [], 'KAEK Codes': [], 'Hull': [], 'Flags': [], 'Monetary Amounts': [(928, ['1,00 €']), (929, ['0,20 €']), (930, ['1,50 €']), (931, ['0,30 €'])], 'Metrics': [], 'Conditions': [(919, ['εάν']), (921, ['εάν']), (931, ['εάν']), (946, ['τις προϋποθέσεις'])], 'Contraints': [(184, ['πλην']), (609, ['πλην']), (614, ['πλην']), (784, ['μέχρι']), (922, ['αρκεί'])], 'Durations': [(919, ['επί']), (921, ['επί'])]}
 
+```
